@@ -2,21 +2,15 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Solved      : 32 / 270
-Completion  : 0%
+## 📊 Progress
+<!-- PROGRESS_START -->
+Solved: 0 / 0  
+Completion: 0%
 
-Progress
 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]
+<!-- PROGRESS_END --> 0%
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Legend:
-⬜ Not Started
-🟡 In Progress
-✅ Solved
-
----
-
 
 ## SQL injection
 
