@@ -10,14 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Calculate Progress
         run: |
           total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
           solved=$(grep -o "\- \[x\]" README.md | wc -l)
 
-          percent=$(awk "BEGIN {printf \"%.0f\", ($solved/$total)*100}")
+          if [ "$total" -eq 0 ]; then
+            percent=0
+          else
+            percent=$(( solved * 100 / total ))
+          fi
 
           filled=$((percent / 5))
           empty=$((20 - filled))
@@ -25,14 +29,23 @@ jobs:
           bar=$(printf "%0.s█" $(seq 1 $filled))
           space=$(printf "%0.s░" $(seq 1 $empty))
 
-          output="Solved: $solved / $total  \nCompletion: $percent% \n\n$bar$space"
+          progress="Solved: $solved / $total  
+Completion: $percent%
 
-          sed -i "/PROGRESS_START/,/PROGRESS_END/c\\<!-- PROGRESS_START -->\n$output\n<!-- PROGRESS_END -->" README.md
+$bar$space"
+
+          awk -v p="$progress" '
+          /<!-- PROGRESS_START -->/ {print; print p; skip=1; next}
+          /<!-- PROGRESS_END -->/ {skip=0}
+          !skip
+          ' README.md > temp.md
+
+          mv temp.md README.md
 
       - name: Commit changes
         run: |
           git config --global user.name "progress-bot"
           git config --global user.email "bot@github.com"
           git add README.md
-          git commit -m "auto progress update" || echo "No changes"
+          git commit -m "update progress" || echo "No changes"
           git push
