@@ -4,10 +4,10 @@ Track progress of all PortSwigger labs
 No writeups • No spoilers • Just progress
 
 ## 📊 Progress
-## 📊 Progress
 
-<!-- START_CHECKLIST_PROGRESS -->
-<!-- END_CHECKLIST_PROGRESS -->
+<!-- PROGRESS_START -->
+Loading...
+<!-- PROGRESS_END -->
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
