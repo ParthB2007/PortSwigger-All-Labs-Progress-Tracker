@@ -1,87 +1,34 @@
-# PortSwigger Web Security Academy — Full Lab Tracker
-
-Track your progress of all PortSwigger labs  
-Here’s a clean **README.md** you can paste at the top of your repo:
-
----
-
 # PortSwigger Labs Progress Tracker 🚀
 
-Progress tracker for completed challenges.
+Progress tracker for completed challenges.  
 Updates automatically using GitHub Actions.
 
-## How to use
+## 📊 Progress
+<!-- PROGRESS_START -->
+<!-- PROGRESS_END -->
 
-1. Mark labs using checklist format:
+<details>
+<summary><b>How to use</b></summary>
 
+### 1. Mark labs using checklist
 ```
 - [ ] Lab name
 - [x] Completed lab
 ```
 
-2. Keep this block where you want progress to appear:
-
+### 2. Keep this block where you want progress
 ```
 <!-- PROGRESS_START -->
-Solved: 34 / 275
-Completion: 12%
-
-██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
 ```
 
-3. Push changes — progress updates automatically.
+### 3. Push changes
+GitHub Actions will automatically update:
+- solved count  
+- percentage  
+- progress bar  
 
----
-
-## Example
-
-```
-- [x] SQL injection vulnerability in WHERE clause
-- [ ] Reflected XSS into HTML context
-- [ ] DOM XSS in document.write
-```
-
----
-
-## Progress
-
-<!-- PROGRESS_START -->
-Solved: 34 / 275
-Completion: 12%
-
-██░░░░░░░░░░░░░░░░░░
-<!-- PROGRESS_END -->
-
----
-
-### Features
-
-* ✅ Auto progress calculation
-* 📊 Progress bar
-* 🔄 Auto README update
-* ⚡ GitHub Actions powered
-
----
-
-If you'd like, I can also:
-
-* add **PortSwigger categories**
-* add **difficulty badges**
-* add **percentage badge**
-* add **cool hacker style**
-
-Just say.
-
-
-## 📊 Progress
-
-<!-- PROGRESS_START -->
-Solved: 34 / 275
-Completion: 12%
-
-██░░░░░░░░░░░░░░░░░░
-<!-- PROGRESS_END -->
+</details>
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
