@@ -1,8 +1,5 @@
 # PortSwigger Labs Progress Tracker 🚀
-
-Progress tracker for completed challenges.  
-Updates automatically using GitHub Actions.
-
+<sub>⚡ Crafted by ParthB2007</sub> (you can remove this idc)
 ---
 ## 📊 Progress
 <!-- PROGRESS_START -->
