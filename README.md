@@ -6,8 +6,8 @@ No writeups • No spoilers • Just progress
 ## 📊 Progress
 
 <!-- PROGRESS_START -->
-Solved: 35 / 270
-Completion: 12%
+Solved: 32 / 270
+Completion: 11%
 
 ██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
