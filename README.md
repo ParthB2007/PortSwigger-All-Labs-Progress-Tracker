@@ -1,16 +1,20 @@
 # PortSwigger Web Security Academy — Full Lab Tracker
 
-## Progress
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-**Solved:** 32 / 270
+Solved      : 0
+Remaining   : 0
+Completion  : 0%
 
+Progress
+[░░░░░░░░░░░░░░░░░░░░░░░░░░░░]
 
-**Completion:** 11.9%
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-
-Legend:  
-- [ ] Not solved  
-- [x] Solved
+Legend:
+⬜ Not Started
+🟡 In Progress
+✅ Solved
 
 ---
 
