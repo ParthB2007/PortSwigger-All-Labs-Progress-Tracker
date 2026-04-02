@@ -23,6 +23,10 @@ Updates automatically using GitHub Actions.
 
 ```
 <!-- PROGRESS_START -->
+Solved: 34 / 275
+Completion: 12%
+
+██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
 ```
 
@@ -43,7 +47,10 @@ Updates automatically using GitHub Actions.
 ## Progress
 
 <!-- PROGRESS_START -->
+Solved: 34 / 275
+Completion: 12%
 
+██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
 
 ---
@@ -70,8 +77,8 @@ Just say.
 ## 📊 Progress
 
 <!-- PROGRESS_START -->
-Solved: 32 / 270
-Completion: 11%
+Solved: 34 / 275
+Completion: 12%
 
 ██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
