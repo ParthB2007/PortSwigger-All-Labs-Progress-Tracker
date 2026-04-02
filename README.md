@@ -18,7 +18,7 @@ Completion: 0%
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
 - [x] SQL injection vulnerability allowing login bypass — *APPRENTICE*
 - [x] SQL injection attack, querying the database type and version on Oracle — *PRACTITIONER*
-- [] SQL injection attack, querying the database type and version on MySQL and Microsoft — *PRACTITIONER*
+- [ ] SQL injection attack, querying the database type and version on MySQL and Microsoft — *PRACTITIONER*
 - [x] SQL injection attack, listing the database contents on non-Oracle databases — *PRACTITIONER*
 - [x] SQL injection attack, listing the database contents on Oracle — *PRACTITIONER*
 - [x] SQL injection UNION attack, determining the number of columns returned by the query — *PRACTITIONER*
