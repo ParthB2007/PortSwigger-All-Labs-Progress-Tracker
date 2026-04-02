@@ -4,7 +4,7 @@
 
 ## 📊 Progress
 <!-- PROGRESS_START -->
-Solved: 10 / 0  
+Solved: 10 / 100
 Completion: 0%
 
 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]
