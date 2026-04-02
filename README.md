@@ -2,6 +2,11 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+# PortSwigger Web Security Academy — Full Lab Tracker
+
+Track progress of all PortSwigger labs  
+No writeups • No spoilers • Just progress
+
 ## 📊 Progress
 <!-- PROGRESS_START -->
 Solved: 0 / 0  
