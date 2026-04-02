@@ -2,8 +2,7 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Solved      : 0
-Remaining   : 0
+Solved      : 32 / 270
 Completion  : 0%
 
 Progress
