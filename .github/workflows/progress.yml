@@ -1,4 +1,4 @@
-name: Checklist Progress Badge
+name: Checklist Progress
 
 on:
   push:
@@ -11,13 +11,14 @@ permissions:
 jobs:
   checklist-progress:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Checklist Progress Badge
         uses: dodopizza/gha-checklist-badges@v0.1
         with:
-          readme-filename: README.md
+          readme-fname: README.md
           github_token: ${{ secrets.GITHUB_TOKEN }}
