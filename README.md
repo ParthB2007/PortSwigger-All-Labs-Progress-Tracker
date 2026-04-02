@@ -6,7 +6,10 @@ No writeups • No spoilers • Just progress
 ## 📊 Progress
 
 <!-- PROGRESS_START -->
-Loading...
+Solved: 34 / 270
+Completion: 12%
+
+██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
