@@ -26,7 +26,7 @@ Completion: 0%
 - [x] SQL injection UNION attack, retrieving data from other tables — *PRACTITIONER*
 - [x] SQL injection UNION attack, retrieving multiple values in a single column — *PRACTITIONER*
 - [x] Blind SQL injection with conditional responses — *PRACTITIONER*
-- [ ] Blind SQL injection with conditional errors — *PRACTITIONER*
+- [x] Blind SQL injection with conditional errors — *PRACTITIONER*
 - [ ] Visible error-based SQL injection — *PRACTITIONER*
 - [ ] Blind SQL injection with time delays — *PRACTITIONER*
 - [ ] Blind SQL injection with time delays and information retrieval — *PRACTITIONER*
