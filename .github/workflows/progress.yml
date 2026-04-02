@@ -1,4 +1,4 @@
-name: Checklist Progress
+name: Auto Progress
 
 on:
   push:
@@ -9,16 +9,60 @@ permissions:
   contents: write
 
 jobs:
-  checklist-progress:
+  progress:
     runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Checklist Progress Badge
-        uses: dodopizza/gha-checklist-badges@v0.1
-        with:
-          readme-fname: README.md
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Calculate progress
+        id: calc
+        run: |
+          total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
+          done=$(grep -o "\- \[x\]" README.md | wc -l)
+
+          if [ "$total" -eq 0 ]; then
+            percent=0
+          else
+            percent=$((done * 100 / total))
+          fi
+
+          filled=$((percent / 5))
+          empty=$((20 - filled))
+
+          bar=$(printf "%0.s█" $(seq 1 $filled))
+          space=$(printf "%0.s░" $(seq 1 $empty))
+
+          echo "BAR=$bar$space" >> $GITHUB_OUTPUT
+          echo "DONE=$done" >> $GITHUB_OUTPUT
+          echo "TOTAL=$total" >> $GITHUB_OUTPUT
+          echo "PERCENT=$percent" >> $GITHUB_OUTPUT
+
+      - name: Update README
+        run: |
+          awk -v done="${{ steps.calc.outputs.DONE }}" \
+              -v total="${{ steps.calc.outputs.TOTAL }}" \
+              -v percent="${{ steps.calc.outputs.PERCENT }}" \
+              -v bar="${{ steps.calc.outputs.BAR }}" '
+          /<!-- PROGRESS_START -->/ {
+            print
+            print "Solved: " done " / " total
+            print "Completion: " percent "%"
+            print ""
+            print bar
+            skip=1
+            next
+          }
+          /<!-- PROGRESS_END -->/ { skip=0 }
+          !skip
+          ' README.md > temp.md
+
+          mv temp.md README.md
+
+      - name: Commit
+        run: |
+          git config --global user.name "progress-bot"
+          git config --global user.email "bot@github.com"
+          git add README.md
+          git commit -m "update progress" || echo "no change"
+          git push
