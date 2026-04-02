@@ -1,7 +1,71 @@
 # PortSwigger Web Security Academy — Full Lab Tracker
 
-Track progress of all PortSwigger labs  
-No writeups • No spoilers • Just progress
+Track your progress of all PortSwigger labs  
+Here’s a clean **README.md** you can paste at the top of your repo:
+
+---
+
+# PortSwigger Labs Progress Tracker 🚀
+
+Progress tracker for completed challenges.
+Updates automatically using GitHub Actions.
+
+## How to use
+
+1. Mark labs using checklist format:
+
+```
+- [ ] Lab name
+- [x] Completed lab
+```
+
+2. Keep this block where you want progress to appear:
+
+```
+<!-- PROGRESS_START -->
+<!-- PROGRESS_END -->
+```
+
+3. Push changes — progress updates automatically.
+
+---
+
+## Example
+
+```
+- [x] SQL injection vulnerability in WHERE clause
+- [ ] Reflected XSS into HTML context
+- [ ] DOM XSS in document.write
+```
+
+---
+
+## Progress
+
+<!-- PROGRESS_START -->
+
+<!-- PROGRESS_END -->
+
+---
+
+### Features
+
+* ✅ Auto progress calculation
+* 📊 Progress bar
+* 🔄 Auto README update
+* ⚡ GitHub Actions powered
+
+---
+
+If you'd like, I can also:
+
+* add **PortSwigger categories**
+* add **difficulty badges**
+* add **percentage badge**
+* add **cool hacker style**
+
+Just say.
+
 
 ## 📊 Progress
 
