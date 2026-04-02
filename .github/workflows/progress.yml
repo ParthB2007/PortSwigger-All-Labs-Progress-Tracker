@@ -25,7 +25,7 @@ jobs:
           bar=$(printf "%0.s█" $(seq 1 $filled))
           space=$(printf "%0.s░" $(seq 1 $empty))
 
-          output="Solved: $solved / $total  \nCompletion: $percent%\n\n[$bar$space]"
+          output="Solved: $solved / $total  \nDone: $percent%\n\n[$bar$space]"
 
           sed -i "/PROGRESS_START/,/PROGRESS_END/c\\<!-- PROGRESS_START -->\n$output\n<!-- PROGRESS_END -->" README.md
 
