@@ -1,0 +1,37 @@
+name: Update Progress
+
+on:
+  push:
+    paths:
+      - "README.md"
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Count progress
+        run: |
+          total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
+          solved=$(grep -o "\- \[x\]" README.md | wc -l)
+
+          percent=$((solved * 100 / total))
+
+          filled=$((percent / 5))
+          empty=$((20 - filled))
+
+          bar=$(printf "%0.s█" $(seq 1 $filled))
+          space=$(printf "%0.s░" $(seq 1 $empty))
+
+          progress="Solved: $solved / $total  \nCompletion: $percent%\n\n[$bar$space]"
+
+          sed -i "/<!-- PROGRESS_START -->/,/<!-- PROGRESS_END -->/c\\<!-- PROGRESS_START -->\n$progress\n<!-- PROGRESS_END -->" README.md
+
+      - name: Commit
+        run: |
+          git config --global user.name "progress-bot"
+          git config --global user.email "bot@github.com"
+          git add README.md
+          git commit -m "update progress" || echo "no changes"
+          git push
