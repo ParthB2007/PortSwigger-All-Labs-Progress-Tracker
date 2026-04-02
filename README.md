@@ -1,6 +1,5 @@
 # PortSwigger Labs Progress Tracker 🚀
-<sub>⚡ Crafted by ParthB2007</sub> (you can remove this idc)
-
+<sub>Crafted by ParthB2007 (Remove this idc) </sub>
 
 ## 📊 Progress
 <!-- PROGRESS_START -->
@@ -9,10 +8,9 @@ Completion: 12%
 
 ██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
-
 ---
 <details>
-<summary>##How to Use</summary>
+<summary><h2>How to Use</h2></summary>
 
 ### 1. Mark labs using checklist
 ```
