@@ -3,6 +3,7 @@
 Progress tracker for completed challenges.  
 Updates automatically using GitHub Actions.
 
+---
 ## 📊 Progress
 <!-- PROGRESS_START -->
 Solved: 33 / 272
@@ -11,6 +12,7 @@ Completion: 12%
 ██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
 
+---
 <details>
 <summary>##How to Use</summary>
 
@@ -35,10 +37,9 @@ GitHub Actions will automatically update:
 - solved count  
 - percentage  
 - progress bar  
-
+---
 </details>
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ## SQL injection
 
