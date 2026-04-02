@@ -16,18 +16,18 @@ Completion: 12%
 
 ## SQL injection
 
-- [ ] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
+- [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
 - [x] SQL injection vulnerability allowing login bypass — *APPRENTICE*
-- [x] SQL injection attack, querying the database type and version on Oracle — *PRACTITIONER*
+- [ ] SQL injection attack, querying the database type and version on Oracle — *PRACTITIONER*
 - [x] SQL injection attack, querying the database type and version on MySQL and Microsoft — *PRACTITIONER*
 - [x] SQL injection attack, listing the database contents on non-Oracle databases — *PRACTITIONER*
-- [x] SQL injection attack, listing the database contents on Oracle — *PRACTITIONER*
+- [ ] SQL injection attack, listing the database contents on Oracle — *PRACTITIONER*
 - [x] SQL injection UNION attack, determining the number of columns returned by the query — *PRACTITIONER*
 - [x] SQL injection UNION attack, finding a column containing text — *PRACTITIONER*
 - [x] SQL injection UNION attack, retrieving data from other tables — *PRACTITIONER*
 - [x] SQL injection UNION attack, retrieving multiple values in a single column — *PRACTITIONER*
-- [x] Blind SQL injection with conditional responses — *PRACTITIONER*
-- [x] Blind SQL injection with conditional errors — *PRACTITIONER*
+- [ ] Blind SQL injection with conditional responses — *PRACTITIONER*
+- [ ] Blind SQL injection with conditional errors — *PRACTITIONER*
 - [ ] Visible error-based SQL injection — *PRACTITIONER*
 - [ ] Blind SQL injection with time delays — *PRACTITIONER*
 - [ ] Blind SQL injection with time delays and information retrieval — *PRACTITIONER*
