@@ -5,6 +5,10 @@ Updates automatically using GitHub Actions.
 
 ## 📊 Progress
 <!-- PROGRESS_START -->
+Solved: 33 / 272
+Completion: 12%
+
+██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
 
 <details>
@@ -19,6 +23,10 @@ Updates automatically using GitHub Actions.
 ### 2. Keep this block where you want progress
 ```
 <!-- PROGRESS_START -->
+Solved: 33 / 272
+Completion: 12%
+
+██░░░░░░░░░░░░░░░░░░
 <!-- PROGRESS_END -->
 ```
 
