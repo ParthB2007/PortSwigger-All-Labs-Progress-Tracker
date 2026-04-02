@@ -1,54 +1,23 @@
-name: Auto Progress
+name: Checklist Progress Badge
 
 on:
   push:
-    paths:
-      - "README.md"
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  progress:
+  checklist-progress:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Calculate Progress
-        run: |
-          total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
-          solved=$(grep -o "\- \[x\]" README.md | wc -l)
-
-          if [ "$total" -eq 0 ]; then
-            percent=0
-          else
-            percent=$(( solved * 100 / total ))
-          fi
-
-          filled=$((percent / 5))
-          empty=$((20 - filled))
-
-          bar=$(printf "%0.s█" $(seq 1 $filled))
-          space=$(printf "%0.s░" $(seq 1 $empty))
-
-          progress="Solved: $solved / $total  
-Completion: $percent%
-
-$bar$space"
-
-          awk -v p="$progress" '
-          /<!-- PROGRESS_START -->/ {print; print p; skip=1; next}
-          /<!-- PROGRESS_END -->/ {skip=0}
-          !skip
-          ' README.md > temp.md
-
-          mv temp.md README.md
-
-      - name: Commit changes
-        run: |
-          git config --global user.name "progress-bot"
-          git config --global user.email "bot@github.com"
-          git add README.md
-          git commit -m "update progress" || echo "No changes"
-          git push
+      - name: Checklist Progress Badge
+        uses: dodopizza/gha-checklist-badges@v0.1
+        with:
+          readme-filename: README.md
+          github_token: ${{ secrets.GITHUB_TOKEN }}
