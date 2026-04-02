@@ -4,11 +4,11 @@
 
 ## 📊 Progress
 <!-- PROGRESS_START -->
-Solved: 0 / 0 
+Solved: 0 / 0  
 Completion: 0%
 
 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]
-<!-- PROGRESS_END --> 0%
+<!-- PROGRESS_END -->
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
