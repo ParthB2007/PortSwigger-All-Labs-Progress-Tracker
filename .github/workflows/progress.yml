@@ -29,10 +29,7 @@ jobs:
           bar=$(printf "%0.s█" $(seq 1 $filled))
           space=$(printf "%0.s░" $(seq 1 $empty))
 
-          progress="Solved: $solved / $total  
-Completion: $percent%
-
-$bar$space"
+          progress="Solved: $solved / $total  \nCompletion: $percent% \n$bar$space"
 
           awk -v p="$progress" '
           /<!-- PROGRESS_START -->/ {print; print p; skip=1; next}
