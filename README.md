@@ -12,7 +12,7 @@ Completion: 12%
 <!-- PROGRESS_END -->
 
 <details>
-<summary><b>How to use</b></summary>
+<summary>##How to Use</summary>
 
 ### 1. Mark labs using checklist
 ```
