@@ -61,6 +61,7 @@ GitHub Actions will automatically update:
 
 ## SQL injection
 
+<!-- SQL_START -->
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
 - [x] SQL injection vulnerability allowing login bypass — *APPRENTICE*
 - [ ] SQL injection attack, querying the database type and version on Oracle — *PRACTITIONER*
@@ -79,7 +80,7 @@ GitHub Actions will automatically update:
 - [ ] Blind SQL injection with out-of-band interaction — *PRACTITIONER*
 - [ ] Blind SQL injection with out-of-band data exfiltration — *PRACTITIONER*
 - [ ] SQL injection with filter bypass via XML encoding — *PRACTITIONER*
-
+<!-- SQL_END -->
 
 ## Cross-site scripting
 
