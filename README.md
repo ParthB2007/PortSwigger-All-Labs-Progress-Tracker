@@ -70,7 +70,11 @@ GitHub Actions will automatically update:
 <!-- SQL_END -->
 
 ## Cross-site scripting
+<!-- NOSQL_PROGRESS_START -->
+<!-- NOSQL_PROGRESS_END -->
 
+<!-- NOSQL_START -->
+<!-- NOSQL_END -->
 - [ ] Reflected XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] Stored XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] DOM XSS in document.write sink using source location.search — *APPRENTICE*
