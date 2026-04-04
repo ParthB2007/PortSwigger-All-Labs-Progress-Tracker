@@ -10,7 +10,7 @@
 ### 1. Mark labs using checklist
 ```
 - [ ] Lab name
-- [x] Completed lab
+- [ ] Completed lab
 ```
 
 ### 2. Keep this block where you want progress
@@ -184,7 +184,7 @@ GitHub Actions will automatically update:
 - [ ] Password brute-force via password change
 - [ ] Broken brute-force protection, multiple credentials per request
 - [ ] 2FA bypass using a brute-force attack
-
+            
 ## WebSockets
 - [x] Manipulating WebSocket messages to exploit vulnerabilities
 - [ ] Cross-site WebSocket hijacking
