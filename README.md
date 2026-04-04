@@ -32,7 +32,7 @@ GitHub Actions will automatically update:
 
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 - [x] SQL injection vulnerability allowing login bypass
-- [x] SQL injection attack, querying the database type and version on Oracle
+- [ ] SQL injection attack, querying the database type and version on Oracle
 - [x] SQL injection attack, querying the database type and version on MySQL and Microsoft
 - [x] SQL injection attack, listing the database contents on non-Oracle databases
 - [ ] SQL injection attack, listing the database contents on Oracle
