@@ -29,10 +29,9 @@ jobs:
           }
 
           calc_section () {
-            start=$1
-            end=$2
+            header="$1"
 
-            section=$(awk "/$start/,/$end/" README.md)
+            section=$(awk "/## $header/,/^## /" README.md)
 
             total=$(echo "$section" | grep -o "\- \[[ x]\]" | wc -l)
             done=$(echo "$section" | grep -o "\- \[x\]" | wc -l)
@@ -51,42 +50,40 @@ jobs:
           # overall
           total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
           done=$(grep -o "\- \[x\]" README.md | wc -l)
+
           percent=$((done * 100 / total))
           bar=$(make_bar $percent)
 
           echo "OVERALL=$done|$total|$percent|$bar" >> $GITHUB_OUTPUT
 
-          # modules
-          echo "SQL=$(calc_section '<!-- SQL_START -->' '<!-- SQL_END -->')" >> $GITHUB_OUTPUT
-          echo "NOSQL=$(calc_section '<!-- NOSQL_START -->' '<!-- NOSQL_END -->')" >> $GITHUB_OUTPUT
+          echo "SQL=$(calc_section "SQL injection")" >> $GITHUB_OUTPUT
+          echo "XSS=$(calc_section "Cross-site scripting")" >> $GITHUB_OUTPUT
+          echo "CSRF=$(calc_section "Cross-site request forgery")" >> $GITHUB_OUTPUT
+          echo "SSRF=$(calc_section "Server-side request forgery")" >> $GITHUB_OUTPUT
+          echo "NOSQL=$(calc_section "NoSQL injection")" >> $GITHUB_OUTPUT
 
       - name: Update README
         run: |
 
           overall="${{ steps.calc.outputs.OVERALL }}"
-          sql="${{ steps.calc.outputs.SQL }}"
-          nosql="${{ steps.calc.outputs.NOSQL }}"
 
-          awk -v overall="$overall" \
-              -v sql="$sql" \
-              -v nosql="$nosql" '
+          awk -v overall="$overall" '
 
           function block(data){
             split(data,a,"|")
-            print a[1] "/" a[2] " (" a[3] "%)"
             print a[4]
+            print a[1] "/" a[2] " (" a[3] "%)"
+            print ""
           }
 
-          /<!-- OVERALL_START -->/ {print; block(overall); skip=1; next}
-          /<!-- OVERALL_END -->/ {skip=0}
+          /## Overall Progress/ {
+            print
+            block(overall)
+            next
+          }
 
-          /<!-- SQL_PROGRESS_START -->/ {print; block(sql); skip=1; next}
-          /<!-- SQL_PROGRESS_END -->/ {skip=0}
+          {print}
 
-          /<!-- NOSQL_PROGRESS_START -->/ {print; block(nosql); skip=1; next}
-          /<!-- NOSQL_PROGRESS_END -->/ {skip=0}
-
-          !skip
           ' README.md > temp.md
 
           mv temp.md README.md
