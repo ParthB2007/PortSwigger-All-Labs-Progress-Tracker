@@ -4,9 +4,6 @@
 ## 📊 Progress
 ██░░░░░░░░░░░░░░░░░░
 27/246 (10%)
-29/246 (11%)
-28/246 (11%)
-28/246 (11%)
   <details>
 <summary><h2>How to Use</h2></summary>
 
@@ -35,7 +32,7 @@ GitHub Actions will automatically update:
 
 ## SQL injection   
    
-- [ ] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
+- [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
 - [x] SQL injection vulnerability allowing login bypass — *APPRENTICE*
 - [ ] SQL injection attack, querying the database type and version on Oracle — *PRACTITIONER*
 - [x] SQL injection attack, querying the database type and version on MySQL and Microsoft — *PRACTITIONER*
