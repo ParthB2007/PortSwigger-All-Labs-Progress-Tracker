@@ -3,8 +3,8 @@
 
 ## 📊 Progress
 <!-- OVERALL_START -->
-<!-- OVERALL_END -->
----
+██░░░░░░░░░░░░░░░░░░
+36/269 (13%)
 <details>
 <summary><h2>How to Use</h2></summary>
 
@@ -127,7 +127,7 @@ GitHub Actions will automatically update:
 
 <!-- CLICKJACK_PROGRESS -->
 █░░░░░░░░░░░░░░░░░░░░
-0/5 (0%)
+0/0 (0%)
 - [ ] Basic clickjacking with CSRF token protection — *APPRENTICE*
 - [ ] Clickjacking with form input data prefilled from a URL parameter — *APPRENTICE*
 - [ ] Clickjacking with a frame buster script — *APPRENTICE*
@@ -139,7 +139,7 @@ GitHub Actions will automatically update:
 
 <!-- DOM_PROGRESS -->
 █░░░░░░░░░░░░░░░░░░░░
-0/7 (0%)
+0/0 (0%)
 - [ ] DOM XSS using web messages and a JavaScript URL — *PRACTITIONER*
 - [ ] DOM XSS using web messages and JSON.parse — *PRACTITIONER*
 - [ ] DOM-based open redirection — *PRACTITIONER*
@@ -152,7 +152,7 @@ GitHub Actions will automatically update:
 
 <!-- CORS_PROGRESS -->
 █░░░░░░░░░░░░░░░░░░░░
-0/3 (0%)
+0/0 (0%)
 - [ ] CORS vulnerability with trusted null origin — *APPRENTICE*
 - [ ] CORS vulnerability with trusted insecure protocols — *PRACTITIONER*
 <!-- CORS_END -->
@@ -162,7 +162,7 @@ GitHub Actions will automatically update:
 
 <!-- XXE_PROGRESS -->
 █░░░░░░░░░░░░░░░░░░░░
-0/9 (0%)
+0/0 (0%)
 - [ ] Exploiting XXE to perform SSRF attacks — *APPRENTICE*
 - [ ] Blind XXE with out-of-band interaction — *PRACTITIONER*
 - [ ] Blind XXE with out-of-band interaction via XML parameter entities — *PRACTITIONER*
@@ -177,8 +177,8 @@ GitHub Actions will automatically update:
 ## Server-side request forgery (SSRF)
 
 <!-- SSRF_PROGRESS -->
-<!-- SSRF_START -->
-- [x] Basic SSRF against the local server — *APPRENTICE*
+█████░░░░░░░░░░░░░░░
+2/7 (28%)
 - [x] Basic SSRF against another back-end system — *APPRENTICE*
 - [ ] Blind SSRF with out-of-band detection — *PRACTITIONER*
 - [ ] SSRF with blacklist-based input filter — *PRACTITIONER*
@@ -481,8 +481,8 @@ GitHub Actions will automatically update:
 ## NoSQL injection
 
 <!-- NOSQL_PROGRESS -->
-<!-- NOSQL_START -->
-- [ ] Detecting NoSQL injection — *APPRENTICE*
+█░░░░░░░░░░░░░░░░░░░░
+0/4 (0%)
 - [ ] Exploiting NoSQL operator injection to bypass authentication — *APPRENTICE*
 - [ ] Exploiting NoSQL injection to extract data — *PRACTITIONER*
 - [ ] Exploiting NoSQL operator injection to extract unknown fields — *PRACTITIONER*
