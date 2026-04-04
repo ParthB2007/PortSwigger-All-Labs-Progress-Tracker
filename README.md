@@ -86,7 +86,8 @@ GitHub Actions will automatically update:
 <!-- SQL_END -->
 
 ## Cross-site scripting
-<!-- XSS_PROGRESS -->
+<!-- XSS_PROGRESS_START -->
+<!-- XSS_PROGRESS_END -->
 <!-- XSS_START -->
 - [ ] Reflected XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] Stored XSS into HTML context with nothing encoded — *APPRENTICE*
