@@ -191,7 +191,7 @@ GitHub Actions will automatically update:
 - [x] OS command injection, simple case — *APPRENTICE*
 - [x] Blind OS command injection with time delays — *PRACTITIONER*
 - [x] Blind OS command injection with output redirection — *PRACTITIONER*
-- [ ] Blind OS command injection with out-of-band interaction — *PRACTITIONER*
+- [x] Blind OS command injection with out-of-band interaction — *PRACTITIONER*
 - [ ] Blind OS command injection with out-of-band data exfiltration — *PRACTITIONER*
 
 
