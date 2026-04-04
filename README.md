@@ -47,10 +47,7 @@ GitHub Actions will automatically update:
 
 
 ## SQL injection
-<!-- SQL_PROGRESS_START -->
-8/18 (44%)
-████████░░░░░░░░░░░░
-<!-- SQL_PROGRESS_END -->
+<!-- SQL_PROGRESS_ -->
 
 <!-- SQL_START -->
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
@@ -75,8 +72,6 @@ GitHub Actions will automatically update:
 
 ## Cross-site scripting
 <!-- XSS_PROGRESS -->
-█░░░░░░░░░░░░░░░░░░░░
-0/30 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/30 (0%)
 <!-- XSS_START -->
@@ -113,7 +108,7 @@ GitHub Actions will automatically update:
 <!-- XSS_END -->
 
 ## Cross-site request forgery (CSRF)
-
+<!-- CSRF_PROGRESS -->
 <!-- CSRF_START -->
 - [ ] CSRF vulnerability with no defenses — *APPRENTICE*
 - [ ] CSRF where token validation depends on request method — *PRACTITIONER*
@@ -131,6 +126,7 @@ GitHub Actions will automatically update:
 
 ## Clickjacking
 
+<!-- CLICKJACK_PROGRESS -->
 <!-- CLICKJACK_START -->
 - [ ] Basic clickjacking with CSRF token protection — *APPRENTICE*
 - [ ] Clickjacking with form input data prefilled from a URL parameter — *APPRENTICE*
@@ -141,6 +137,8 @@ GitHub Actions will automatically update:
 
 ## DOM-based vulnerabilities
 
+<!-- DOM_PROGRESS -->
+<!-- DOM_START -->
 - [ ] DOM XSS using web messages — *PRACTITIONER*
 - [ ] DOM XSS using web messages and a JavaScript URL — *PRACTITIONER*
 - [ ] DOM XSS using web messages and JSON.parse — *PRACTITIONER*
@@ -148,17 +146,22 @@ GitHub Actions will automatically update:
 - [ ] DOM-based cookie manipulation — *PRACTITIONER*
 - [ ] Exploiting DOM clobbering to enable XSS — *EXPERT*
 - [ ] Clobbering DOM attributes to bypass HTML filters — *EXPERT*
-
+<!-- DOM_END -->
 
 ## Cross-origin resource sharing (CORS)
 
+<!-- CORS_PROGRESS -->
+<!-- CORS_START -->
 - [ ] CORS vulnerability with basic origin reflection — *APPRENTICE*
 - [ ] CORS vulnerability with trusted null origin — *APPRENTICE*
 - [ ] CORS vulnerability with trusted insecure protocols — *PRACTITIONER*
+<!-- CORS_END -->
 
 
 ## XML external entity (XXE) injection
 
+<!-- XXE_PROGRESS -->
+<!-- XXE_START -->
 - [ ] Exploiting XXE using external entities to retrieve files — *APPRENTICE*
 - [ ] Exploiting XXE to perform SSRF attacks — *APPRENTICE*
 - [ ] Blind XXE with out-of-band interaction — *PRACTITIONER*
@@ -168,9 +171,12 @@ GitHub Actions will automatically update:
 - [ ] Exploiting XInclude to retrieve files — *PRACTITIONER*
 - [ ] Exploiting XXE via image file upload — *PRACTITIONER*
 - [ ] Exploiting XXE to retrieve data by repurposing a local DTD — *EXPERT*
+<!-- XXE_END -->
 
 
 ## Server-side request forgery (SSRF)
+
+<!-- SSRF_PROGRESS -->
 <!-- SSRF_START -->
 - [x] Basic SSRF against the local server — *APPRENTICE*
 - [x] Basic SSRF against another back-end system — *APPRENTICE*
@@ -183,6 +189,8 @@ GitHub Actions will automatically update:
 
 ## HTTP request smuggling
 
+<!-- SMUGGLING_PROGRESS -->
+<!-- SMUGGLING_START -->
 - [ ] HTTP request smuggling, confirming a CL.TE vulnerability via differential responses — *PRACTITIONER*
 - [ ] HTTP request smuggling, confirming a TE.CL vulnerability via differential responses — *PRACTITIONER*
 - [ ] Exploiting HTTP request smuggling to bypass front-end security controls, CL.TE vulnerability — *PRACTITIONER*
@@ -205,19 +213,25 @@ GitHub Actions will automatically update:
 - [ ] Web cache poisoning via HTTP/2 request tunnelling — *EXPERT*
 - [ ] Client-side desync — *EXPERT*
 - [ ] Server-side pause-based request smuggling — *EXPERT*
+<!-- SMUGGLING_END -->
 
 
 ## OS command injection
 
+<!-- CMD_PROGRESS -->
+<!-- CMD_START -->
 - [x] OS command injection, simple case — *APPRENTICE*
 - [x] Blind OS command injection with time delays — *PRACTITIONER*
 - [x] Blind OS command injection with output redirection — *PRACTITIONER*
 - [x] Blind OS command injection with out-of-band interaction — *PRACTITIONER*
 - [x] Blind OS command injection with out-of-band data exfiltration — *PRACTITIONER*
+<!-- CMD_END -->
 
 
 ## Server-side template injection
 
+<!-- SSTI_PROGRESS -->
+<!-- SSTI_START -->
 - [ ] Basic server-side template injection — *PRACTITIONER*
 - [ ] Basic server-side template injection (code context) — *PRACTITIONER*
 - [ ] Server-side template injection using documentation — *PRACTITIONER*
@@ -225,20 +239,25 @@ GitHub Actions will automatically update:
 - [ ] Server-side template injection with information disclosure via user-supplied objects — *PRACTITIONER*
 - [ ] Server-side template injection in a sandboxed environment — *EXPERT*
 - [ ] Server-side template injection with a custom exploit — *EXPERT*
-
+<!-- SSTI_END -->
 
 ## Path traversal
 
+<!-- TRAVERSAL_PROGRESS -->
+<!-- TRAVERSAL_START -->
 - [x] File path traversal, simple case — *APPRENTICE*
 - [ ] File path traversal, traversal sequences blocked with absolute path bypass — *PRACTITIONER*
 - [ ] File path traversal, traversal sequences stripped non-recursively — *PRACTITIONER*
 - [ ] File path traversal, traversal sequences stripped with superfluous URL-decode — *PRACTITIONER*
 - [ ] File path traversal, validation of start of path — *PRACTITIONER*
 - [ ] File path traversal, validation of file extension with null byte bypass — *PRACTITIONER*
+<!-- TRAVERSAL_END -->
 
 
 ## Access control vulnerabilities
 
+<!-- ACCESS_PROGRESS -->
+<!-- ACCESS_START -->
 - [x] Unprotected admin functionality — *APPRENTICE*
 - [x] Unprotected admin functionality with unpredictable URL — *APPRENTICE*
 - [x] User role controlled by request parameter — *APPRENTICE*
@@ -252,10 +271,12 @@ GitHub Actions will automatically update:
 - [ ] Method-based access control can be circumvented — *PRACTITIONER*
 - [ ] Multi-step process with no access control on one step — *PRACTITIONER*
 - [ ] Referer-based access control — *PRACTITIONER*
-
+<!-- ACCESS_END -->
 
 ## Authentication
 
+<!-- AUTH_PROGRESS -->
+<!-- AUTH_START -->
 - [x] Username enumeration via different responses — *APPRENTICE*
 - [x] 2FA simple bypass — *APPRENTICE*
 - [x] Password reset broken logic — *APPRENTICE*
@@ -270,17 +291,22 @@ GitHub Actions will automatically update:
 - [ ] Password brute-force via password change — *PRACTITIONER*
 - [ ] Broken brute-force protection, multiple credentials per request — *EXPERT*
 - [ ] 2FA bypass using a brute-force attack — *EXPERT*
+<!-- AUTH_END -->
 
 
 ## WebSockets
-
+<!-- WS_PROGRESS -->
+<!-- WS_START -->
 - [x] Manipulating WebSocket messages to exploit vulnerabilities — *APPRENTICE*
 - [ ] Cross-site WebSocket hijacking — *PRACTITIONER*
 - [ ] Manipulating the WebSocket handshake to exploit vulnerabilities — *PRACTITIONER*
+<!-- WS_END -->
 
 
 ## Web cache poisoning
 
+<!-- CACHE_PROGRESS -->
+<!-- CACHE_START -->
 - [ ] Web cache poisoning with an unkeyed header — *PRACTITIONER*
 - [ ] Web cache poisoning with an unkeyed cookie — *PRACTITIONER*
 - [ ] Web cache poisoning with multiple headers — *PRACTITIONER*
@@ -294,10 +320,13 @@ GitHub Actions will automatically update:
 - [ ] Combining web cache poisoning vulnerabilities — *EXPERT*
 - [ ] Cache key injection — *EXPERT*
 - [ ] Internal cache poisoning — *EXPERT*
+<!-- CACHE_END -->
 
 
 ## Insecure deserialization
 
+<!-- DESERIAL_PROGRESS -->
+<!-- DESERIAL_START -->
 - [ ] Modifying serialized objects — *APPRENTICE*
 - [ ] Modifying serialized data types — *PRACTITIONER*
 - [ ] Using application functionality to exploit insecure deserialization — *PRACTITIONER*
@@ -308,19 +337,25 @@ GitHub Actions will automatically update:
 - [ ] Developing a custom gadget chain for Java deserialization — *EXPERT*
 - [ ] Developing a custom gadget chain for PHP deserialization — *EXPERT*
 - [ ] Using PHAR deserialization to deploy a custom gadget chain — *EXPERT*
+<!-- DESERIAL_END -->
 
 
 ## Information disclosure
 
+<!-- INFO_PROGRESS -->
+<!-- INFO_START -->
 - [ ] Information disclosure in error messages — *APPRENTICE*
 - [ ] Information disclosure on debug page — *APPRENTICE*
 - [ ] Source code disclosure via backup files — *APPRENTICE*
 - [ ] Authentication bypass via information disclosure — *APPRENTICE*
 - [ ] Information disclosure in version control history — *PRACTITIONER*
+<!-- INFO_END -->
 
 
 ## Business logic vulnerabilities
 
+<!-- LOGIC_PROGRESS -->
+<!-- LOGIC_START -->
 - [ ] Excessive trust in client-side controls — *APPRENTICE*
 - [ ] High-level logic vulnerability — *APPRENTICE*
 - [ ] Inconsistent security controls — *APPRENTICE*
@@ -333,10 +368,13 @@ GitHub Actions will automatically update:
 - [ ] Infinite money logic flaw — *PRACTITIONER*
 - [ ] Authentication bypass via encryption oracle — *PRACTITIONER*
 - [ ] Bypassing access controls using email address parsing discrepancies — *EXPERT*
+<!-- LOGIC_END -->
 
 
 ## HTTP Host header attacks
 
+<!-- HOST_PROGRESS -->
+<!-- HOST_START -->
 - [ ] Basic password reset poisoning — *APPRENTICE*
 - [ ] Host header authentication bypass — *APPRENTICE*
 - [ ] Web cache poisoning via ambiguous requests — *PRACTITIONER*
@@ -344,20 +382,26 @@ GitHub Actions will automatically update:
 - [ ] SSRF via flawed request parsing — *PRACTITIONER*
 - [ ] Host validation bypass via connection state attack — *PRACTITIONER*
 - [ ] Password reset poisoning via dangling markup — *EXPERT*
+<!-- HOST_END -->
 
 
 ## OAuth authentication
 
+<!-- OAUTH_PROGRESS -->
+<!-- OAUTH_START -->
 - [ ] Authentication bypass via OAuth implicit flow — *APPRENTICE*
 - [ ] SSRF via OpenID dynamic client registration — *PRACTITIONER*
 - [ ] Forced OAuth profile linking — *PRACTITIONER*
 - [ ] OAuth account hijacking via redirect_uri — *PRACTITIONER*
 - [ ] Stealing OAuth access tokens via an open redirect — *PRACTITIONER*
 - [ ] Stealing OAuth access tokens via a proxy page — *EXPERT*
+<!-- OAUTH_END -->
 
 
 ## File upload vulnerabilities
 
+<!-- UPLOAD_PROGRESS -->
+<!-- UPLOAD_START -->
 - [x] Remote code execution via web shell upload — *APPRENTICE*
 - [x] Web shell upload via Content-Type restriction bypass — *APPRENTICE*
 - [ ] Web shell upload via path traversal — *PRACTITIONER*
@@ -365,10 +409,13 @@ GitHub Actions will automatically update:
 - [ ] Web shell upload via obfuscated file extension — *PRACTITIONER*
 - [ ] Remote code execution via polyglot web shell upload — *PRACTITIONER*
 - [ ] Web shell upload via race condition — *EXPERT*
+<!-- UPLOAD_END -->
 
 
 ## JWT
 
+<!-- JWT_PROGRESS -->
+<!-- JWT_START -->
 - [ ] JWT authentication bypass via unverified signature — *APPRENTICE*
 - [ ] JWT authentication bypass via flawed signature verification — *APPRENTICE*
 - [ ] JWT authentication bypass via weak signing key — *PRACTITIONER*
@@ -377,16 +424,22 @@ GitHub Actions will automatically update:
 - [ ] JWT authentication bypass via kid header path traversal — *PRACTITIONER*
 - [ ] JWT authentication bypass via algorithm confusion — *EXPERT*
 - [ ] JWT authentication bypass via algorithm confusion with no exposed key — *EXPERT*
+<!-- JWT_END -->
 
 
 ## Essential skills
 
+<!-- SKILLS_PROGRESS -->
+<!-- SKILLS_START -->
 - [ ] Discovering vulnerabilities quickly with targeted scanning — *PRACTITIONER*
 - [ ] Scanning non-standard data structures — *PRACTITIONER*
+<!-- SKILLS_END -->
 
 
 ## Prototype pollution
 
+<!-- PROTO_PROGRESS -->
+<!-- PROTO_START -->
 - [ ] Client-side prototype pollution via browser APIs — *PRACTITIONER*
 - [ ] DOM XSS via client-side prototype pollution — *PRACTITIONER*
 - [ ] DOM XSS via an alternative prototype pollution vector — *PRACTITIONER*
@@ -397,56 +450,75 @@ GitHub Actions will automatically update:
 - [ ] Bypassing flawed input filters for server-side prototype pollution — *PRACTITIONER*
 - [ ] Remote code execution via server-side prototype pollution — *PRACTITIONER*
 - [ ] Exfiltrating sensitive data via server-side prototype pollution — *EXPERT*
+<!-- PROTO_END -->
 
 
 ## GraphQL API vulnerabilities
 
+<!-- GRAPHQL_PROGRESS -->
+<!-- GRAPHQL_START -->
 - [ ] Accessing private GraphQL posts — *APPRENTICE*
 - [ ] Accidental exposure of private GraphQL fields — *PRACTITIONER*
 - [ ] Finding a hidden GraphQL endpoint — *PRACTITIONER*
 - [ ] Bypassing GraphQL brute force protections — *PRACTITIONER*
 - [ ] Performing CSRF exploits over GraphQL — *PRACTITIONER*
+<!-- GRAPHQL_END -->
 
 
 ## Race conditions
 
+<!-- RACE_PROGRESS -->
+<!-- RACE_START -->
 - [ ] Limit overrun race conditions — *APPRENTICE*
 - [ ] Bypassing rate limits via race conditions — *PRACTITIONER*
 - [ ] Multi-endpoint race conditions — *PRACTITIONER*
 - [ ] Single-endpoint race conditions — *PRACTITIONER*
 - [ ] Exploiting time-sensitive vulnerabilities — *PRACTITIONER*
 - [ ] Partial construction race conditions — *EXPERT*
+<!-- RACE_END -->
 
 
 ## NoSQL injection
 
+<!-- NOSQL_PROGRESS -->
+<!-- NOSQL_START -->
 - [ ] Detecting NoSQL injection — *APPRENTICE*
 - [ ] Exploiting NoSQL operator injection to bypass authentication — *APPRENTICE*
 - [ ] Exploiting NoSQL injection to extract data — *PRACTITIONER*
 - [ ] Exploiting NoSQL operator injection to extract unknown fields — *PRACTITIONER*
+<!-- NOSQL_END -->
 
 
 ## API testing
 
+<!-- API_PROGRESS -->
+<!-- API_START -->
 - [x] Exploiting an API endpoint using documentation — *APPRENTICE*
 - [ ] Exploiting server-side parameter pollution in a query string — *PRACTITIONER*
 - [x] Finding and exploiting an unused API endpoint — *PRACTITIONER*
 - [x] Exploiting a mass assignment vulnerability — *PRACTITIONER*
 - [ ] Exploiting server-side parameter pollution in a REST URL — *EXPERT*
+<!-- API_END -->
 
 
 ## Web LLM attacks
 
+<!-- LLM_PROGRESS -->
+<!-- LLM_START -->
 - [x] Exploiting LLM APIs with excessive agency — *APPRENTICE*
 - [x] Exploiting vulnerabilities in LLM APIs — *PRACTITIONER*
 - [ ] Indirect prompt injection — *PRACTITIONER*
 - [ ] Exploiting insecure output handling in LLMs — *EXPERT*
+<!-- LLM_END -->
 
 
 ## Web cache deception
 
+<!-- CACHEDEC_PROGRESS -->
+<!-- CACHEDEC_START -->
 - [ ] Exploiting path mapping for web cache deception — *APPRENTICE*
 - [ ] Exploiting path delimiters for web cache deception — *PRACTITIONER*
 - [ ] Exploiting origin server normalization for web cache deception — *PRACTITIONER*
 - [ ] Exploiting cache server normalization for web cache deception — *PRACTITIONER*
 - [ ] Exploiting exact-match cache rules for web cache deception — *EXPERT*
+<!-- CACHEDEC_END -->
