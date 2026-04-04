@@ -77,13 +77,7 @@ GitHub Actions will automatically update:
 <!-- SQL_END -->
 
 ## Cross-site scripting
-<!-- NOSQL_PROGRESS_START -->
-0/0 (0%)
-█░░░░░░░░░░░░░░░░░░░░
-<!-- NOSQL_PROGRESS_END -->
-
-<!-- NOSQL_START -->
-<!-- NOSQL_END -->
+<!-- XSS_START -->
 - [ ] Reflected XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] Stored XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] DOM XSS in document.write sink using source location.search — *APPRENTICE*
@@ -114,10 +108,11 @@ GitHub Actions will automatically update:
 - [ ] Reflected XSS in a JavaScript URL with some characters blocked — *EXPERT*
 - [ ] Reflected XSS protected by very strict CSP, with dangling markup attack — *PRACTITIONER*
 - [ ] Reflected XSS protected by CSP, with CSP bypass — *EXPERT*
-
+<!-- XSS_END -->
 
 ## Cross-site request forgery (CSRF)
 
+<!-- CSRF_START -->
 - [ ] CSRF vulnerability with no defenses — *APPRENTICE*
 - [ ] CSRF where token validation depends on request method — *PRACTITIONER*
 - [ ] CSRF where token validation depends on token being present — *PRACTITIONER*
@@ -130,16 +125,17 @@ GitHub Actions will automatically update:
 - [ ] SameSite Lax bypass via cookie refresh — *PRACTITIONER*
 - [ ] CSRF where Referer validation depends on header being present — *PRACTITIONER*
 - [ ] CSRF with broken Referer validation — *PRACTITIONER*
-
+<!-- CSRF_END -->
 
 ## Clickjacking
 
+<!-- CLICKJACK_START -->
 - [ ] Basic clickjacking with CSRF token protection — *APPRENTICE*
 - [ ] Clickjacking with form input data prefilled from a URL parameter — *APPRENTICE*
 - [ ] Clickjacking with a frame buster script — *APPRENTICE*
 - [ ] Exploiting clickjacking vulnerability to trigger DOM-based XSS — *PRACTITIONER*
 - [ ] Multistep clickjacking — *PRACTITIONER*
-
+<!-- CLICKJACK_END -->
 
 ## DOM-based vulnerabilities
 
