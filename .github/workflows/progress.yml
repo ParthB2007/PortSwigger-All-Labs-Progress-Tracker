@@ -122,43 +122,45 @@ jobs:
 
           function block(data){
             split(data,a,"|")
-            return a[4] "\n" a[1] "/" a[2] " (" a[3] "%)"
+            print a[4]
+            print a[1] "/" a[2] " (" a[3] "%)"
           }
 
-          /<!-- OVERALL_START -->/ { print; print block(overall); getline; getline; next }
+          /<!-- OVERALL_START -->/ { print; block(overall); next }
 
-          /<!-- SQL_PROGRESS -->/ { print; print block(sql); getline; getline; next }
-          /<!-- XSS_PROGRESS -->/ { print; print block(xss); getline; getline; next }
-          /<!-- CSRF_PROGRESS -->/ { print; print block(csrf); getline; getline; next }
-          /<!-- CLICKJACK_PROGRESS -->/ { print; print block(clickjack); getline; getline; next }
-          /<!-- DOM_PROGRESS -->/ { print; print block(dom); getline; getline; next }
-          /<!-- CORS_PROGRESS -->/ { print; print block(cors); getline; getline; next }
-          /<!-- XXE_PROGRESS -->/ { print; print block(xxe); getline; getline; next }
-          /<!-- SSRF_PROGRESS -->/ { print; print block(ssrf); getline; getline; next }
-          /<!-- SMUGGLING_PROGRESS -->/ { print; print block(smuggling); getline; getline; next }
-          /<!-- SSTI_PROGRESS -->/ { print; print block(ssti); getline; getline; next }
-          /<!-- CMD_PROGRESS -->/ { print; print block(cmd); getline; getline; next }
-          /<!-- ACCESS_PROGRESS -->/ { print; print block(access); getline; getline; next }
-          /<!-- AUTH_PROGRESS -->/ { print; print block(auth); getline; getline; next }
-          /<!-- WS_PROGRESS -->/ { print; print block(ws); getline; getline; next }
-          /<!-- CACHE_PROGRESS -->/ { print; print block(cache); getline; getline; next }
-          /<!-- DESERIAL_PROGRESS -->/ { print; print block(deserial); getline; getline; next }
-          /<!-- INFO_PROGRESS -->/ { print; print block(info); getline; getline; next }
-          /<!-- LOGIC_PROGRESS -->/ { print; print block(logic); getline; getline; next }
-          /<!-- HOST_PROGRESS -->/ { print; print block(host); getline; getline; next }
-          /<!-- OAUTH_PROGRESS -->/ { print; print block(oauth); getline; getline; next }
-          /<!-- UPLOAD_PROGRESS -->/ { print; print block(upload); getline; getline; next }
-          /<!-- JWT_PROGRESS -->/ { print; print block(jwt); getline; getline; next }
-          /<!-- SKILLS_PROGRESS -->/ { print; print block(skills); getline; getline; next }
-          /<!-- PROTO_PROGRESS -->/ { print; print block(proto); getline; getline; next }
-          /<!-- GRAPHQL_PROGRESS -->/ { print; print block(graphql); getline; getline; next }
-          /<!-- RACE_PROGRESS -->/ { print; print block(race); getline; getline; next }
-          /<!-- NOSQL_PROGRESS -->/ { print; print block(nosql); getline; getline; next }
-          /<!-- API_PROGRESS -->/ { print; print block(api); getline; getline; next }
-          /<!-- LLM_PROGRESS -->/ { print; print block(llm); getline; getline; next }
-          /<!-- CACHEDEC_PROGRESS -->/ { print; print block(cachedec); getline; getline; next }
+          /<!-- SQL_PROGRESS -->/ { print; block(sql); next }
+          /<!-- XSS_PROGRESS -->/ { print; block(xss); next }
+          /<!-- CSRF_PROGRESS -->/ { print; block(csrf); next }
+          /<!-- CLICKJACK_PROGRESS -->/ { print; block(clickjack); next }
+          /<!-- DOM_PROGRESS -->/ { print; block(dom); next }
+          /<!-- CORS_PROGRESS -->/ { print; block(cors); next }
+          /<!-- XXE_PROGRESS -->/ { print; block(xxe); next }
+          /<!-- SSRF_PROGRESS -->/ { print; block(ssrf); next }
+          /<!-- SMUGGLING_PROGRESS -->/ { print; block(smuggling); next }
+          /<!-- SSTI_PROGRESS -->/ { print; block(ssti); next }
+          /<!-- CMD_PROGRESS -->/ { print; block(cmd); next }
+          /<!-- ACCESS_PROGRESS -->/ { print; block(access); next }
+          /<!-- AUTH_PROGRESS -->/ { print; block(auth); next }
+          /<!-- WS_PROGRESS -->/ { print; block(ws); next }
+          /<!-- CACHE_PROGRESS -->/ { print; block(cache); next }
+          /<!-- DESERIAL_PROGRESS -->/ { print; block(deserial); next }
+          /<!-- INFO_PROGRESS -->/ { print; block(info); next }
+          /<!-- LOGIC_PROGRESS -->/ { print; block(logic); next }
+          /<!-- HOST_PROGRESS -->/ { print; block(host); next }
+          /<!-- OAUTH_PROGRESS -->/ { print; block(oauth); next }
+          /<!-- UPLOAD_PROGRESS -->/ { print; block(upload); next }
+          /<!-- JWT_PROGRESS -->/ { print; block(jwt); next }
+          /<!-- SKILLS_PROGRESS -->/ { print; block(skills); next }
+          /<!-- PROTO_PROGRESS -->/ { print; block(proto); next }
+          /<!-- GRAPHQL_PROGRESS -->/ { print; block(graphql); next }
+          /<!-- RACE_PROGRESS -->/ { print; block(race); next }
+          /<!-- NOSQL_PROGRESS -->/ { print; block(nosql); next }
+          /<!-- API_PROGRESS -->/ { print; block(api); next }
+          /<!-- LLM_PROGRESS -->/ { print; block(llm); next }
+          /<!-- CACHEDEC_PROGRESS -->/ { print; block(cachedec); next }
 
           {print}
+
           ' README.md > temp.md
 
           mv temp.md README.md
