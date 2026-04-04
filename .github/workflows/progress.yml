@@ -35,11 +35,11 @@ jobs:
             section=$(awk -v s="$start" -v e="$end" '
               index($0, s) {flag=1; next}
               index($0, e) {flag=0}
-              flag && /^- \[/ {print}
+              flag && /^[[:space:]]*- \[/ {print}
             ' README.md)
 
             total=$(echo "$section" | wc -l)
-            done=$(echo "$section" | grep -c "\- \[x\]")
+            done=$(echo "$section" | grep -c "\[x\]")
 
             if [ "$total" -eq 0 ]; then percent=0
             else percent=$((done * 100 / total)); fi
@@ -48,8 +48,8 @@ jobs:
             echo "$done|$total|$percent|$bar"
           }
 
-          total=$(grep -c "^- \[" README.md)
-          done=$(grep -c "^- \[x\]" README.md)
+          total=$(grep -c "^[[:space:]]*- \[" README.md)
+          done=$(grep -c "^[[:space:]]*- \[x\]" README.md)
           percent=$((done * 100 / total))
           bar=$(make_bar $percent)
 
@@ -161,7 +161,6 @@ jobs:
           /<!-- CACHEDEC_PROGRESS -->/ { print; print block(cachedec); getline; getline; next }
 
           {print}
-
           ' README.md > temp.md
 
           mv temp.md README.md
