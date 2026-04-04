@@ -48,7 +48,6 @@ GitHub Actions will automatically update:
 
 ## SQL injection
 <!-- SQL_PROGRESS_ -->
-
 <!-- SQL_START -->
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
 - [x] SQL injection vulnerability allowing login bypass — *APPRENTICE*
@@ -72,10 +71,6 @@ GitHub Actions will automatically update:
 
 ## Cross-site scripting
 <!-- XSS_PROGRESS -->
-█░░░░░░░░░░░░░░░░░░░░
-0/30 (0%)
-█░░░░░░░░░░░░░░░░░░░░
-0/30 (0%)
 <!-- XSS_START -->
 - [ ] Reflected XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] Stored XSS into HTML context with nothing encoded — *APPRENTICE*
