@@ -48,7 +48,6 @@ jobs:
             echo "$done|$total|$percent|$bar"
           }
 
-          # overall
           total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
           done=$(grep -o "\- \[x\]" README.md | wc -l)
           percent=$((done * 100 / total))
@@ -59,52 +58,41 @@ jobs:
           echo "SQL=$(calc_section '<!-- SQL_START -->' '<!-- SQL_END -->')" >> $GITHUB_OUTPUT
           echo "XSS=$(calc_section '<!-- XSS_START -->' '<!-- XSS_END -->')" >> $GITHUB_OUTPUT
           echo "CSRF=$(calc_section '<!-- CSRF_START -->' '<!-- CSRF_END -->')" >> $GITHUB_OUTPUT
-          echo "CLICKJACK=$(calc_section '<!-- CLICKJACK_START -->' '<!-- CLICKJACK_END -->')" >> $GITHUB_OUTPUT
-          echo "DOM=$(calc_section '<!-- DOM_START -->' '<!-- DOM_END -->')" >> $GITHUB_OUTPUT
-          echo "CORS=$(calc_section '<!-- CORS_START -->' '<!-- CORS_END -->')" >> $GITHUB_OUTPUT
-          echo "XXE=$(calc_section '<!-- XXE_START -->' '<!-- XXE_END -->')" >> $GITHUB_OUTPUT
           echo "SSRF=$(calc_section '<!-- SSRF_START -->' '<!-- SSRF_END -->')" >> $GITHUB_OUTPUT
-          echo "SMUGGLING=$(calc_section '<!-- SMUGGLING_START -->' '<!-- SMUGGLING_END -->')" >> $GITHUB_OUTPUT
-          echo "SSTI=$(calc_section '<!-- SSTI_START -->' '<!-- SSTI_END -->')" >> $GITHUB_OUTPUT
-          echo "CMD=$(calc_section '<!-- CMD_START -->' '<!-- CMD_END -->')" >> $GITHUB_OUTPUT
-          echo "ACCESS=$(calc_section '<!-- ACCESS_START -->' '<!-- ACCESS_END -->')" >> $GITHUB_OUTPUT
-          echo "AUTH=$(calc_section '<!-- AUTH_START -->' '<!-- AUTH_END -->')" >> $GITHUB_OUTPUT
-          echo "WS=$(calc_section '<!-- WS_START -->' '<!-- WS_END -->')" >> $GITHUB_OUTPUT
-          echo "CACHE=$(calc_section '<!-- CACHE_START -->' '<!-- CACHE_END -->')" >> $GITHUB_OUTPUT
-          echo "DESERIAL=$(calc_section '<!-- DESERIAL_START -->' '<!-- DESERIAL_END -->')" >> $GITHUB_OUTPUT
-          echo "INFO=$(calc_section '<!-- INFO_START -->' '<!-- INFO_END -->')" >> $GITHUB_OUTPUT
-          echo "LOGIC=$(calc_section '<!-- LOGIC_START -->' '<!-- LOGIC_END -->')" >> $GITHUB_OUTPUT
-          echo "HOST=$(calc_section '<!-- HOST_START -->' '<!-- HOST_END -->')" >> $GITHUB_OUTPUT
-          echo "OAUTH=$(calc_section '<!-- OAUTH_START -->' '<!-- OAUTH_END -->')" >> $GITHUB_OUTPUT
-          echo "UPLOAD=$(calc_section '<!-- UPLOAD_START -->' '<!-- UPLOAD_END -->')" >> $GITHUB_OUTPUT
-          echo "JWT=$(calc_section '<!-- JWT_START -->' '<!-- JWT_END -->')" >> $GITHUB_OUTPUT
-          echo "SKILLS=$(calc_section '<!-- SKILLS_START -->' '<!-- SKILLS_END -->')" >> $GITHUB_OUTPUT
-          echo "PROTO=$(calc_section '<!-- PROTO_START -->' '<!-- PROTO_END -->')" >> $GITHUB_OUTPUT
-          echo "GRAPHQL=$(calc_section '<!-- GRAPHQL_START -->' '<!-- GRAPHQL_END -->')" >> $GITHUB_OUTPUT
-          echo "RACE=$(calc_section '<!-- RACE_START -->' '<!-- RACE_END -->')" >> $GITHUB_OUTPUT
           echo "NOSQL=$(calc_section '<!-- NOSQL_START -->' '<!-- NOSQL_END -->')" >> $GITHUB_OUTPUT
-          echo "API=$(calc_section '<!-- API_START -->' '<!-- API_END -->')" >> $GITHUB_OUTPUT
-          echo "LLM=$(calc_section '<!-- LLM_START -->' '<!-- LLM_END -->')" >> $GITHUB_OUTPUT
-          echo "CACHEDEC=$(calc_section '<!-- CACHEDEC_START -->' '<!-- CACHEDEC_END -->')" >> $GITHUB_OUTPUT
 
       - name: Update README
         run: |
-          overall="${{ steps.calc.outputs.OVERALL }}"
 
-          awk -v overall="$overall" '
+          awk -v overall="${{ steps.calc.outputs.OVERALL }}" \
+              -v sql="${{ steps.calc.outputs.SQL }}" \
+              -v xss="${{ steps.calc.outputs.XSS }}" \
+              -v csrf="${{ steps.calc.outputs.CSRF }}" \
+              -v ssrf="${{ steps.calc.outputs.SSRF }}" \
+              -v nosql="${{ steps.calc.outputs.NOSQL }}" '
 
           function block(data){
             split(data,a,"|")
             print a[4]
             print a[1] "/" a[2] " (" a[3] "%)"
-            print ""
           }
 
-          /<!-- OVERALL_START -->/ {print; block(overall); skip=1; next}
-          /<!-- OVERALL_END -->/ {skip=0}
+          /<!-- OVERALL_START -->/ {
+            print
+            block(overall)
+            skip=1
+            next
+          }
 
-          {print}
+          /<!-- OVERALL_END -->/ { skip=0 }
 
+          /<!-- SQL_PROGRESS -->/ { print; block(sql); next }
+          /<!-- XSS_PROGRESS -->/ { print; block(xss); next }
+          /<!-- CSRF_PROGRESS -->/ { print; block(csrf); next }
+          /<!-- SSRF_PROGRESS -->/ { print; block(ssrf); next }
+          /<!-- NOSQL_PROGRESS -->/ { print; block(nosql); next }
+
+          !skip
           ' README.md > temp.md
 
           mv temp.md README.md
