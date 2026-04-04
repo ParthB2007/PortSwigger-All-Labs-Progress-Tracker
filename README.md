@@ -40,8 +40,8 @@ GitHub Actions will automatically update:
 - progress bar  
 ---
 </details>
-  ## SQL injection
-   
+
+## SQL injection   
    
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
 - [x] SQL injection vulnerability allowing login bypass — *APPRENTICE*
