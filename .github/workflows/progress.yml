@@ -32,11 +32,8 @@ jobs:
             start="$1"
             end="$2"
 
-            section=$(awk -v s="$start" -v e="$end" '
-              index($0, s) {flag=1; next}
-              index($0, e) {flag=0}
-              flag && /^[[:space:]]*- \[/ {print}
-            ' README.md)
+            section=$(sed -n "/$start/,/$end/p" README.md | \
+                      grep -E "^[[:space:]]*-[[:space:]]*\[[ x]\]")
 
             total=$(echo "$section" | wc -l)
             done=$(echo "$section" | grep -c "\[x\]")
@@ -48,8 +45,9 @@ jobs:
             echo "$done|$total|$percent|$bar"
           }
 
-          total=$(grep -c "^[[:space:]]*- \[" README.md)
-          done=$(grep -c "^[[:space:]]*- \[x\]" README.md)
+          total=$(grep -E "^[[:space:]]*-[[:space:]]*\[[ x]\]" README.md | wc -l)
+          done=$(grep -E "^[[:space:]]*-[[:space:]]*\[x\]" README.md | wc -l)
+
           percent=$((done * 100 / total))
           bar=$(make_bar $percent)
 
