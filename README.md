@@ -3,10 +3,21 @@
 
 ## 📊 Progress
 <!-- PROGRESS_START -->
-Solved: 36 / 272
-Completion: 13%
-
+Overall: 36/272 (13%)
 ██░░░░░░░░░░░░░░░░░░
+
+SQL Injection: 0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+
+NoSQL Injection: 0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+
+XSS: 0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+
+Authentication: 0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+
 <!-- PROGRESS_END -->
 ---
 <details>
@@ -21,10 +32,21 @@ Completion: 13%
 ### 2. Keep this block where you want progress
 ```
 <!-- PROGRESS_START -->
-Solved: 36 / 272
-Completion: 13%
-
+Overall: 36/272 (13%)
 ██░░░░░░░░░░░░░░░░░░
+
+SQL Injection: 0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+
+NoSQL Injection: 0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+
+XSS: 0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+
+Authentication: 0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+
 <!-- PROGRESS_END -->
 ```
 
