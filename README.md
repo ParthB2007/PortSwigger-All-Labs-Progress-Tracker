@@ -172,7 +172,7 @@ GitHub Actions will automatically update:
 
 
 ## Server-side request forgery (SSRF)
-
+<!-- SSRF_START -->
 - [x] Basic SSRF against the local server — *APPRENTICE*
 - [x] Basic SSRF against another back-end system — *APPRENTICE*
 - [ ] Blind SSRF with out-of-band detection — *PRACTITIONER*
@@ -180,7 +180,7 @@ GitHub Actions will automatically update:
 - [ ] SSRF with filter bypass via open redirection vulnerability — *PRACTITIONER*
 - [ ] Blind SSRF with Shellshock exploitation — *EXPERT*
 - [ ] SSRF with whitelist-based input filter — *EXPERT*
-
+<!-- SSRF_END -->
 
 ## HTTP request smuggling
 
