@@ -74,6 +74,8 @@ GitHub Actions will automatically update:
 <!-- XSS_PROGRESS -->
 █░░░░░░░░░░░░░░░░░░░░
 0/30 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/30 (0%)
 <!-- XSS_START -->
 - [ ] Reflected XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] Stored XSS into HTML context with nothing encoded — *APPRENTICE*
@@ -109,6 +111,8 @@ GitHub Actions will automatically update:
 
 ## Cross-site request forgery (CSRF)
 <!-- CSRF_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/12 (0%)
 <!-- CSRF_START -->
 - [ ] CSRF vulnerability with no defenses — *APPRENTICE*
 - [ ] CSRF where token validation depends on request method — *PRACTITIONER*
@@ -127,6 +131,8 @@ GitHub Actions will automatically update:
 ## Clickjacking
 
 <!-- CLICKJACK_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/5 (0%)
 <!-- CLICKJACK_START -->
 - [ ] Basic clickjacking with CSRF token protection — *APPRENTICE*
 - [ ] Clickjacking with form input data prefilled from a URL parameter — *APPRENTICE*
@@ -138,6 +144,8 @@ GitHub Actions will automatically update:
 ## DOM-based vulnerabilities
 
 <!-- DOM_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/7 (0%)
 <!-- DOM_START -->
 - [ ] DOM XSS using web messages — *PRACTITIONER*
 - [ ] DOM XSS using web messages and a JavaScript URL — *PRACTITIONER*
@@ -151,6 +159,8 @@ GitHub Actions will automatically update:
 ## Cross-origin resource sharing (CORS)
 
 <!-- CORS_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/3 (0%)
 <!-- CORS_START -->
 - [ ] CORS vulnerability with basic origin reflection — *APPRENTICE*
 - [ ] CORS vulnerability with trusted null origin — *APPRENTICE*
@@ -161,6 +171,8 @@ GitHub Actions will automatically update:
 ## XML external entity (XXE) injection
 
 <!-- XXE_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/9 (0%)
 <!-- XXE_START -->
 - [ ] Exploiting XXE using external entities to retrieve files — *APPRENTICE*
 - [ ] Exploiting XXE to perform SSRF attacks — *APPRENTICE*
@@ -177,6 +189,8 @@ GitHub Actions will automatically update:
 ## Server-side request forgery (SSRF)
 
 <!-- SSRF_PROGRESS -->
+█████░░░░░░░░░░░░░░░
+2/7 (28%)
 <!-- SSRF_START -->
 - [x] Basic SSRF against the local server — *APPRENTICE*
 - [x] Basic SSRF against another back-end system — *APPRENTICE*
@@ -190,6 +204,8 @@ GitHub Actions will automatically update:
 ## HTTP request smuggling
 
 <!-- SMUGGLING_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/22 (0%)
 <!-- SMUGGLING_START -->
 - [ ] HTTP request smuggling, confirming a CL.TE vulnerability via differential responses — *PRACTITIONER*
 - [ ] HTTP request smuggling, confirming a TE.CL vulnerability via differential responses — *PRACTITIONER*
@@ -219,6 +235,8 @@ GitHub Actions will automatically update:
 ## OS command injection
 
 <!-- CMD_PROGRESS -->
+████████████████████░
+5/5 (100%)
 <!-- CMD_START -->
 - [x] OS command injection, simple case — *APPRENTICE*
 - [x] Blind OS command injection with time delays — *PRACTITIONER*
@@ -231,6 +249,8 @@ GitHub Actions will automatically update:
 ## Server-side template injection
 
 <!-- SSTI_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/7 (0%)
 <!-- SSTI_START -->
 - [ ] Basic server-side template injection — *PRACTITIONER*
 - [ ] Basic server-side template injection (code context) — *PRACTITIONER*
@@ -257,6 +277,8 @@ GitHub Actions will automatically update:
 ## Access control vulnerabilities
 
 <!-- ACCESS_PROGRESS -->
+███████░░░░░░░░░░░░░
+5/13 (38%)
 <!-- ACCESS_START -->
 - [x] Unprotected admin functionality — *APPRENTICE*
 - [x] Unprotected admin functionality with unpredictable URL — *APPRENTICE*
@@ -276,6 +298,8 @@ GitHub Actions will automatically update:
 ## Authentication
 
 <!-- AUTH_PROGRESS -->
+████████░░░░░░░░░░░░
+6/14 (42%)
 <!-- AUTH_START -->
 - [x] Username enumeration via different responses — *APPRENTICE*
 - [x] 2FA simple bypass — *APPRENTICE*
@@ -296,6 +320,8 @@ GitHub Actions will automatically update:
 
 ## WebSockets
 <!-- WS_PROGRESS -->
+██████░░░░░░░░░░░░░░
+1/3 (33%)
 <!-- WS_START -->
 - [x] Manipulating WebSocket messages to exploit vulnerabilities — *APPRENTICE*
 - [ ] Cross-site WebSocket hijacking — *PRACTITIONER*
@@ -306,6 +332,8 @@ GitHub Actions will automatically update:
 ## Web cache poisoning
 
 <!-- CACHE_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/13 (0%)
 <!-- CACHE_START -->
 - [ ] Web cache poisoning with an unkeyed header — *PRACTITIONER*
 - [ ] Web cache poisoning with an unkeyed cookie — *PRACTITIONER*
@@ -326,6 +354,8 @@ GitHub Actions will automatically update:
 ## Insecure deserialization
 
 <!-- DESERIAL_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/10 (0%)
 <!-- DESERIAL_START -->
 - [ ] Modifying serialized objects — *APPRENTICE*
 - [ ] Modifying serialized data types — *PRACTITIONER*
@@ -343,6 +373,8 @@ GitHub Actions will automatically update:
 ## Information disclosure
 
 <!-- INFO_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/5 (0%)
 <!-- INFO_START -->
 - [ ] Information disclosure in error messages — *APPRENTICE*
 - [ ] Information disclosure on debug page — *APPRENTICE*
@@ -355,6 +387,8 @@ GitHub Actions will automatically update:
 ## Business logic vulnerabilities
 
 <!-- LOGIC_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/12 (0%)
 <!-- LOGIC_START -->
 - [ ] Excessive trust in client-side controls — *APPRENTICE*
 - [ ] High-level logic vulnerability — *APPRENTICE*
@@ -374,6 +408,8 @@ GitHub Actions will automatically update:
 ## HTTP Host header attacks
 
 <!-- HOST_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/7 (0%)
 <!-- HOST_START -->
 - [ ] Basic password reset poisoning — *APPRENTICE*
 - [ ] Host header authentication bypass — *APPRENTICE*
@@ -388,6 +424,8 @@ GitHub Actions will automatically update:
 ## OAuth authentication
 
 <!-- OAUTH_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/6 (0%)
 <!-- OAUTH_START -->
 - [ ] Authentication bypass via OAuth implicit flow — *APPRENTICE*
 - [ ] SSRF via OpenID dynamic client registration — *PRACTITIONER*
@@ -401,6 +439,8 @@ GitHub Actions will automatically update:
 ## File upload vulnerabilities
 
 <!-- UPLOAD_PROGRESS -->
+█████░░░░░░░░░░░░░░░
+2/7 (28%)
 <!-- UPLOAD_START -->
 - [x] Remote code execution via web shell upload — *APPRENTICE*
 - [x] Web shell upload via Content-Type restriction bypass — *APPRENTICE*
@@ -415,6 +455,8 @@ GitHub Actions will automatically update:
 ## JWT
 
 <!-- JWT_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/8 (0%)
 <!-- JWT_START -->
 - [ ] JWT authentication bypass via unverified signature — *APPRENTICE*
 - [ ] JWT authentication bypass via flawed signature verification — *APPRENTICE*
@@ -430,6 +472,8 @@ GitHub Actions will automatically update:
 ## Essential skills
 
 <!-- SKILLS_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/2 (0%)
 <!-- SKILLS_START -->
 - [ ] Discovering vulnerabilities quickly with targeted scanning — *PRACTITIONER*
 - [ ] Scanning non-standard data structures — *PRACTITIONER*
@@ -439,6 +483,8 @@ GitHub Actions will automatically update:
 ## Prototype pollution
 
 <!-- PROTO_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/10 (0%)
 <!-- PROTO_START -->
 - [ ] Client-side prototype pollution via browser APIs — *PRACTITIONER*
 - [ ] DOM XSS via client-side prototype pollution — *PRACTITIONER*
@@ -456,6 +502,8 @@ GitHub Actions will automatically update:
 ## GraphQL API vulnerabilities
 
 <!-- GRAPHQL_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/5 (0%)
 <!-- GRAPHQL_START -->
 - [ ] Accessing private GraphQL posts — *APPRENTICE*
 - [ ] Accidental exposure of private GraphQL fields — *PRACTITIONER*
@@ -468,6 +516,8 @@ GitHub Actions will automatically update:
 ## Race conditions
 
 <!-- RACE_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/6 (0%)
 <!-- RACE_START -->
 - [ ] Limit overrun race conditions — *APPRENTICE*
 - [ ] Bypassing rate limits via race conditions — *PRACTITIONER*
@@ -481,6 +531,8 @@ GitHub Actions will automatically update:
 ## NoSQL injection
 
 <!-- NOSQL_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/4 (0%)
 <!-- NOSQL_START -->
 - [ ] Detecting NoSQL injection — *APPRENTICE*
 - [ ] Exploiting NoSQL operator injection to bypass authentication — *APPRENTICE*
@@ -492,6 +544,8 @@ GitHub Actions will automatically update:
 ## API testing
 
 <!-- API_PROGRESS -->
+████████████░░░░░░░░
+3/5 (60%)
 <!-- API_START -->
 - [x] Exploiting an API endpoint using documentation — *APPRENTICE*
 - [ ] Exploiting server-side parameter pollution in a query string — *PRACTITIONER*
@@ -504,6 +558,8 @@ GitHub Actions will automatically update:
 ## Web LLM attacks
 
 <!-- LLM_PROGRESS -->
+██████████░░░░░░░░░░
+2/4 (50%)
 <!-- LLM_START -->
 - [x] Exploiting LLM APIs with excessive agency — *APPRENTICE*
 - [x] Exploiting vulnerabilities in LLM APIs — *PRACTITIONER*
@@ -515,6 +571,8 @@ GitHub Actions will automatically update:
 ## Web cache deception
 
 <!-- CACHEDEC_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/5 (0%)
 <!-- CACHEDEC_START -->
 - [ ] Exploiting path mapping for web cache deception — *APPRENTICE*
 - [ ] Exploiting path delimiters for web cache deception — *PRACTITIONER*
