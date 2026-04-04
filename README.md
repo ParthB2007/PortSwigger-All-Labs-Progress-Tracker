@@ -55,7 +55,7 @@ GitHub Actions will automatically update:
 - [x] SQL injection attack, querying the database type and version on MySQL and Microsoft — *PRACTITIONER*
 - [x] SQL injection attack, listing the database contents on non-Oracle databases — *PRACTITIONER*
 - [ ] SQL injection attack, listing the database contents on Oracle — *PRACTITIONER*
-- [x] SQL injection UNION attack, determining the number of columns returned by the query — *PRACTITIONER*
+- [x] SQL injection UNION attack, determining the number of columns returned by the query — *PRACTITIONER* 
 - [x] SQL injection UNION attack, finding a column containing text — *PRACTITIONER*
 - [x] SQL injection UNION attack, retrieving data from other tables — *PRACTITIONER*
 - [x] SQL injection UNION attack, retrieving multiple values in a single column — *PRACTITIONER*
