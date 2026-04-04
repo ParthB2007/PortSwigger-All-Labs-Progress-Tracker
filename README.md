@@ -192,7 +192,7 @@ GitHub Actions will automatically update:
 - [x] Blind OS command injection with time delays — *PRACTITIONER*
 - [x] Blind OS command injection with output redirection — *PRACTITIONER*
 - [x] Blind OS command injection with out-of-band interaction — *PRACTITIONER*
-- [ ] Blind OS command injection with out-of-band data exfiltration — *PRACTITIONER*
+- [x] Blind OS command injection with out-of-band data exfiltration — *PRACTITIONER*
 
 
 ## Server-side template injection
