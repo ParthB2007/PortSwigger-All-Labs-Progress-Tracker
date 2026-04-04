@@ -10,7 +10,7 @@
 ### 1. Mark labs using checklist
 ```
 - [ ] Lab name
-- [ ] Completed lab
+- [ x ] Completed lab (No Spacing Between []
 ```
 
 ### 2. Keep this block where you want progress
