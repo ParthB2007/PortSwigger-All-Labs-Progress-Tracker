@@ -35,7 +35,7 @@ GitHub Actions will automatically update:
 
 ## SQL injection   
    
-- [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
+- [ ] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
 - [x] SQL injection vulnerability allowing login bypass — *APPRENTICE*
 - [ ] SQL injection attack, querying the database type and version on Oracle — *PRACTITIONER*
 - [x] SQL injection attack, querying the database type and version on MySQL and Microsoft — *PRACTITIONER*
