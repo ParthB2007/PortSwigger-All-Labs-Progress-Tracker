@@ -2,23 +2,8 @@
 <sub>Crafted by ParthB2007 (Remove this idc) </sub>
 
 ## 📊 Progress
-<!-- PROGRESS_START -->
-Overall: 36/272 (13%)
-██░░░░░░░░░░░░░░░░░░
-
-SQL Injection: 8/18 (44%)
-████████░░░░░░░░░░░░
-
-NoSQL Injection: 0/0 (0%)
-█░░░░░░░░░░░░░░░░░░░░
-
-XSS: 0/0 (0%)
-█░░░░░░░░░░░░░░░░░░░░
-
-Authentication: 0/0 (0%)
-█░░░░░░░░░░░░░░░░░░░░
-
-<!-- PROGRESS_END -->
+<!-- OVERALL_START -->
+<!-- OVERALL_END -->
 ---
 <details>
 <summary><h2>How to Use</h2></summary>
@@ -60,6 +45,8 @@ GitHub Actions will automatically update:
 
 
 ## SQL injection
+<!-- SQL_PROGRESS_START -->
+<!-- SQL_PROGRESS_END -->
 
 <!-- SQL_START -->
 - [x] SQL injection vulnerability in WHERE clause allowing retrieval of hidden data — *APPRENTICE*
