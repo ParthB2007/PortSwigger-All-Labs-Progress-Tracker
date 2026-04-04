@@ -132,8 +132,8 @@ GitHub Actions will automatically update:
 ## Clickjacking
 
 <!-- CLICKJACK_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
 0/5 (0%)
-<!-- CLICKJACK_START -->
 - [ ] Basic clickjacking with CSRF token protection — *APPRENTICE*
 - [ ] Clickjacking with form input data prefilled from a URL parameter — *APPRENTICE*
 - [ ] Clickjacking with a frame buster script — *APPRENTICE*
@@ -144,8 +144,8 @@ GitHub Actions will automatically update:
 ## DOM-based vulnerabilities
 
 <!-- DOM_PROGRESS -->
-<!-- DOM_START -->
-- [ ] DOM XSS using web messages — *PRACTITIONER*
+█░░░░░░░░░░░░░░░░░░░░
+0/7 (0%)
 - [ ] DOM XSS using web messages and a JavaScript URL — *PRACTITIONER*
 - [ ] DOM XSS using web messages and JSON.parse — *PRACTITIONER*
 - [ ] DOM-based open redirection — *PRACTITIONER*
@@ -157,8 +157,8 @@ GitHub Actions will automatically update:
 ## Cross-origin resource sharing (CORS)
 
 <!-- CORS_PROGRESS -->
-<!-- CORS_START -->
-- [ ] CORS vulnerability with basic origin reflection — *APPRENTICE*
+█░░░░░░░░░░░░░░░░░░░░
+0/3 (0%)
 - [ ] CORS vulnerability with trusted null origin — *APPRENTICE*
 - [ ] CORS vulnerability with trusted insecure protocols — *PRACTITIONER*
 <!-- CORS_END -->
@@ -167,8 +167,8 @@ GitHub Actions will automatically update:
 ## XML external entity (XXE) injection
 
 <!-- XXE_PROGRESS -->
-<!-- XXE_START -->
-- [ ] Exploiting XXE using external entities to retrieve files — *APPRENTICE*
+█░░░░░░░░░░░░░░░░░░░░
+0/9 (0%)
 - [ ] Exploiting XXE to perform SSRF attacks — *APPRENTICE*
 - [ ] Blind XXE with out-of-band interaction — *PRACTITIONER*
 - [ ] Blind XXE with out-of-band interaction via XML parameter entities — *PRACTITIONER*
