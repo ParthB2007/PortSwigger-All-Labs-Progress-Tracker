@@ -3,6 +3,8 @@
 
 ## 📊 Progress
 <!-- OVERALL_START -->
+36/272 (13%)
+██░░░░░░░░░░░░░░░░░░
 <!-- OVERALL_END -->
 ---
 <details>
@@ -46,6 +48,8 @@ GitHub Actions will automatically update:
 
 ## SQL injection
 <!-- SQL_PROGRESS_START -->
+8/18 (44%)
+████████░░░░░░░░░░░░
 <!-- SQL_PROGRESS_END -->
 
 <!-- SQL_START -->
@@ -71,6 +75,8 @@ GitHub Actions will automatically update:
 
 ## Cross-site scripting
 <!-- NOSQL_PROGRESS_START -->
+0/0 (0%)
+█░░░░░░░░░░░░░░░░░░░░
 <!-- NOSQL_PROGRESS_END -->
 
 <!-- NOSQL_START -->
