@@ -31,7 +31,8 @@ jobs:
           calc_section () {
             start=$1
             end=$2
-            section=$(awk "/$start/,/$end/" README.md)
+
+            section=$(awk "/$start/,/$end/" README.md | grep "^- \[")
 
             total=$(echo "$section" | grep -o "\- \[[ x]\]" | wc -l)
             done=$(echo "$section" | grep -o "\- \[x\]" | wc -l)
@@ -43,8 +44,8 @@ jobs:
             echo "$done|$total|$percent|$bar"
           }
 
-          total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
-          done=$(grep -o "\- \[x\]" README.md | wc -l)
+          total=$(grep "^- \[" README.md | wc -l)
+          done=$(grep "^- \[x\]" README.md | wc -l)
           percent=$((done * 100 / total))
           bar=$(make_bar $percent)
 
