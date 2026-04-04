@@ -77,7 +77,6 @@ GitHub Actions will automatically update:
 <!-- XSS_PROGRESS -->
 █░░░░░░░░░░░░░░░░░░░░
 0/30 (0%)
-0/30 (0%)
 <!-- XSS_START -->
 - [ ] Reflected XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] Stored XSS into HTML context with nothing encoded — *APPRENTICE*
@@ -113,14 +112,6 @@ GitHub Actions will automatically update:
 
 ## Cross-site request forgery (CSRF)
 <!-- CSRF_PROGRESS -->
-█░░░░░░░░░░░░░░░░░░░░
-0/12 (0%)
-█░░░░░░░░░░░░░░░░░░░░
-0/12 (0%)
-█░░░░░░░░░░░░░░░░░░░░
-0/12 (0%)
-█░░░░░░░░░░░░░░░░░░░░
-0/12 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/12 (0%)
 <!-- CSRF_START -->
