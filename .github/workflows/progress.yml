@@ -44,8 +44,8 @@ jobs:
             echo "$done|$total|$percent|$bar"
           }
 
-          total=$(grep "^- \[" README.md | wc -l)
-          done=$(grep "^- \[x\]" README.md | wc -l)
+          total=$(grep -c "^- \[" README.md)
+          done=$(grep -c "^- \[x\]" README.md)
           percent=$((done * 100 / total))
           bar=$(make_bar $percent)
 
