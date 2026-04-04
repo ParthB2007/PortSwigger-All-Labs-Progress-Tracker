@@ -148,11 +148,11 @@ GitHub Actions will automatically update:
 
 ## Path traversal
 - [x] File path traversal, simple case
-- [ ] File path traversal, traversal sequences blocked with absolute path bypass
-- [ ] File path traversal, traversal sequences stripped non-recursively
-- [ ] File path traversal, traversal sequences stripped with superfluous URL-decode
-- [ ] File path traversal, validation of start of path
-- [ ] File path traversal, validation of file extension with null byte bypass
+- [x] File path traversal, traversal sequences blocked with absolute path bypass
+- [x] File path traversal, traversal sequences stripped non-recursively
+- [x] File path traversal, traversal sequences stripped with superfluous URL-decode
+- [x] File path traversal, validation of start of path
+- [x] File path traversal, validation of file extension with null byte bypass
 
 ## Access control vulnerabilities
 - [x] Unprotected admin functionality
