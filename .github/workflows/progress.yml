@@ -44,11 +44,9 @@ jobs:
             fi
 
             bar=$(make_bar $percent)
-
             echo "$done|$total|$percent|$bar"
           }
 
-          # overall
           total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
           done=$(grep -o "\- \[x\]" README.md | wc -l)
           percent=$((done * 100 / total))
@@ -128,8 +126,7 @@ jobs:
             print a[1] "/" a[2] " (" a[3] "%)"
           }
 
-          /<!-- OVERALL_START -->/ {print; block(overall); skip=1; next}
-          /<!-- OVERALL_END -->/ {skip=0}
+          /<!-- OVERALL_START -->/ {print; block(overall); next}
 
           /<!-- SQL_PROGRESS -->/ {print; block(sql); next}
           /<!-- XSS_PROGRESS -->/ {print; block(xss); next}
@@ -162,7 +159,8 @@ jobs:
           /<!-- LLM_PROGRESS -->/ {print; block(llm); next}
           /<!-- CACHEDEC_PROGRESS -->/ {print; block(cachedec); next}
 
-          !skip
+          {print}
+
           ' README.md > temp.md
 
           mv temp.md README.md
