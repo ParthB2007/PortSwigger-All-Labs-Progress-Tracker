@@ -48,6 +48,7 @@ jobs:
             echo "$done|$total|$percent|$bar"
           }
 
+          # overall
           total=$(grep -o "\- \[[ x]\]" README.md | wc -l)
           done=$(grep -o "\- \[x\]" README.md | wc -l)
           percent=$((done * 100 / total))
@@ -58,18 +59,68 @@ jobs:
           echo "SQL=$(calc_section '<!-- SQL_START -->' '<!-- SQL_END -->')" >> $GITHUB_OUTPUT
           echo "XSS=$(calc_section '<!-- XSS_START -->' '<!-- XSS_END -->')" >> $GITHUB_OUTPUT
           echo "CSRF=$(calc_section '<!-- CSRF_START -->' '<!-- CSRF_END -->')" >> $GITHUB_OUTPUT
+          echo "CLICKJACK=$(calc_section '<!-- CLICKJACK_START -->' '<!-- CLICKJACK_END -->')" >> $GITHUB_OUTPUT
+          echo "DOM=$(calc_section '<!-- DOM_START -->' '<!-- DOM_END -->')" >> $GITHUB_OUTPUT
+          echo "CORS=$(calc_section '<!-- CORS_START -->' '<!-- CORS_END -->')" >> $GITHUB_OUTPUT
+          echo "XXE=$(calc_section '<!-- XXE_START -->' '<!-- XXE_END -->')" >> $GITHUB_OUTPUT
           echo "SSRF=$(calc_section '<!-- SSRF_START -->' '<!-- SSRF_END -->')" >> $GITHUB_OUTPUT
+          echo "SMUGGLING=$(calc_section '<!-- SMUGGLING_START -->' '<!-- SMUGGLING_END -->')" >> $GITHUB_OUTPUT
+          echo "SSTI=$(calc_section '<!-- SSTI_START -->' '<!-- SSTI_END -->')" >> $GITHUB_OUTPUT
+          echo "CMD=$(calc_section '<!-- CMD_START -->' '<!-- CMD_END -->')" >> $GITHUB_OUTPUT
+          echo "ACCESS=$(calc_section '<!-- ACCESS_START -->' '<!-- ACCESS_END -->')" >> $GITHUB_OUTPUT
+          echo "AUTH=$(calc_section '<!-- AUTH_START -->' '<!-- AUTH_END -->')" >> $GITHUB_OUTPUT
+          echo "WS=$(calc_section '<!-- WS_START -->' '<!-- WS_END -->')" >> $GITHUB_OUTPUT
+          echo "CACHE=$(calc_section '<!-- CACHE_START -->' '<!-- CACHE_END -->')" >> $GITHUB_OUTPUT
+          echo "DESERIAL=$(calc_section '<!-- DESERIAL_START -->' '<!-- DESERIAL_END -->')" >> $GITHUB_OUTPUT
+          echo "INFO=$(calc_section '<!-- INFO_START -->' '<!-- INFO_END -->')" >> $GITHUB_OUTPUT
+          echo "LOGIC=$(calc_section '<!-- LOGIC_START -->' '<!-- LOGIC_END -->')" >> $GITHUB_OUTPUT
+          echo "HOST=$(calc_section '<!-- HOST_START -->' '<!-- HOST_END -->')" >> $GITHUB_OUTPUT
+          echo "OAUTH=$(calc_section '<!-- OAUTH_START -->' '<!-- OAUTH_END -->')" >> $GITHUB_OUTPUT
+          echo "UPLOAD=$(calc_section '<!-- UPLOAD_START -->' '<!-- UPLOAD_END -->')" >> $GITHUB_OUTPUT
+          echo "JWT=$(calc_section '<!-- JWT_START -->' '<!-- JWT_END -->')" >> $GITHUB_OUTPUT
+          echo "SKILLS=$(calc_section '<!-- SKILLS_START -->' '<!-- SKILLS_END -->')" >> $GITHUB_OUTPUT
+          echo "PROTO=$(calc_section '<!-- PROTO_START -->' '<!-- PROTO_END -->')" >> $GITHUB_OUTPUT
+          echo "GRAPHQL=$(calc_section '<!-- GRAPHQL_START -->' '<!-- GRAPHQL_END -->')" >> $GITHUB_OUTPUT
+          echo "RACE=$(calc_section '<!-- RACE_START -->' '<!-- RACE_END -->')" >> $GITHUB_OUTPUT
           echo "NOSQL=$(calc_section '<!-- NOSQL_START -->' '<!-- NOSQL_END -->')" >> $GITHUB_OUTPUT
+          echo "API=$(calc_section '<!-- API_START -->' '<!-- API_END -->')" >> $GITHUB_OUTPUT
+          echo "LLM=$(calc_section '<!-- LLM_START -->' '<!-- LLM_END -->')" >> $GITHUB_OUTPUT
+          echo "CACHEDEC=$(calc_section '<!-- CACHEDEC_START -->' '<!-- CACHEDEC_END -->')" >> $GITHUB_OUTPUT
 
       - name: Update README
         run: |
-
-          awk -v overall="${{ steps.calc.outputs.OVERALL }}" \
-              -v sql="${{ steps.calc.outputs.SQL }}" \
-              -v xss="${{ steps.calc.outputs.XSS }}" \
-              -v csrf="${{ steps.calc.outputs.CSRF }}" \
-              -v ssrf="${{ steps.calc.outputs.SSRF }}" \
-              -v nosql="${{ steps.calc.outputs.NOSQL }}" '
+          awk \
+          -v overall="${{ steps.calc.outputs.OVERALL }}" \
+          -v sql="${{ steps.calc.outputs.SQL }}" \
+          -v xss="${{ steps.calc.outputs.XSS }}" \
+          -v csrf="${{ steps.calc.outputs.CSRF }}" \
+          -v clickjack="${{ steps.calc.outputs.CLICKJACK }}" \
+          -v dom="${{ steps.calc.outputs.DOM }}" \
+          -v cors="${{ steps.calc.outputs.CORS }}" \
+          -v xxe="${{ steps.calc.outputs.XXE }}" \
+          -v ssrf="${{ steps.calc.outputs.SSRF }}" \
+          -v smuggling="${{ steps.calc.outputs.SMUGGLING }}" \
+          -v ssti="${{ steps.calc.outputs.SSTI }}" \
+          -v cmd="${{ steps.calc.outputs.CMD }}" \
+          -v access="${{ steps.calc.outputs.ACCESS }}" \
+          -v auth="${{ steps.calc.outputs.AUTH }}" \
+          -v ws="${{ steps.calc.outputs.WS }}" \
+          -v cache="${{ steps.calc.outputs.CACHE }}" \
+          -v deserial="${{ steps.calc.outputs.DESERIAL }}" \
+          -v info="${{ steps.calc.outputs.INFO }}" \
+          -v logic="${{ steps.calc.outputs.LOGIC }}" \
+          -v host="${{ steps.calc.outputs.HOST }}" \
+          -v oauth="${{ steps.calc.outputs.OAUTH }}" \
+          -v upload="${{ steps.calc.outputs.UPLOAD }}" \
+          -v jwt="${{ steps.calc.outputs.JWT }}" \
+          -v skills="${{ steps.calc.outputs.SKILLS }}" \
+          -v proto="${{ steps.calc.outputs.PROTO }}" \
+          -v graphql="${{ steps.calc.outputs.GRAPHQL }}" \
+          -v race="${{ steps.calc.outputs.RACE }}" \
+          -v nosql="${{ steps.calc.outputs.NOSQL }}" \
+          -v api="${{ steps.calc.outputs.API }}" \
+          -v llm="${{ steps.calc.outputs.LLM }}" \
+          -v cachedec="${{ steps.calc.outputs.CACHEDEC }}" '
 
           function block(data){
             split(data,a,"|")
@@ -77,20 +128,39 @@ jobs:
             print a[1] "/" a[2] " (" a[3] "%)"
           }
 
-          /<!-- OVERALL_START -->/ {
-            print
-            block(overall)
-            skip=1
-            next
-          }
+          /<!-- OVERALL_START -->/ {print; block(overall); skip=1; next}
+          /<!-- OVERALL_END -->/ {skip=0}
 
-          /<!-- OVERALL_END -->/ { skip=0 }
-
-          /<!-- SQL_PROGRESS -->/ { print; block(sql); next }
-          /<!-- XSS_PROGRESS -->/ { print; block(xss); next }
-          /<!-- CSRF_PROGRESS -->/ { print; block(csrf); next }
-          /<!-- SSRF_PROGRESS -->/ { print; block(ssrf); next }
-          /<!-- NOSQL_PROGRESS -->/ { print; block(nosql); next }
+          /<!-- SQL_PROGRESS -->/ {print; block(sql); next}
+          /<!-- XSS_PROGRESS -->/ {print; block(xss); next}
+          /<!-- CSRF_PROGRESS -->/ {print; block(csrf); next}
+          /<!-- CLICKJACK_PROGRESS -->/ {print; block(clickjack); next}
+          /<!-- DOM_PROGRESS -->/ {print; block(dom); next}
+          /<!-- CORS_PROGRESS -->/ {print; block(cors); next}
+          /<!-- XXE_PROGRESS -->/ {print; block(xxe); next}
+          /<!-- SSRF_PROGRESS -->/ {print; block(ssrf); next}
+          /<!-- SMUGGLING_PROGRESS -->/ {print; block(smuggling); next}
+          /<!-- SSTI_PROGRESS -->/ {print; block(ssti); next}
+          /<!-- CMD_PROGRESS -->/ {print; block(cmd); next}
+          /<!-- ACCESS_PROGRESS -->/ {print; block(access); next}
+          /<!-- AUTH_PROGRESS -->/ {print; block(auth); next}
+          /<!-- WS_PROGRESS -->/ {print; block(ws); next}
+          /<!-- CACHE_PROGRESS -->/ {print; block(cache); next}
+          /<!-- DESERIAL_PROGRESS -->/ {print; block(deserial); next}
+          /<!-- INFO_PROGRESS -->/ {print; block(info); next}
+          /<!-- LOGIC_PROGRESS -->/ {print; block(logic); next}
+          /<!-- HOST_PROGRESS -->/ {print; block(host); next}
+          /<!-- OAUTH_PROGRESS -->/ {print; block(oauth); next}
+          /<!-- UPLOAD_PROGRESS -->/ {print; block(upload); next}
+          /<!-- JWT_PROGRESS -->/ {print; block(jwt); next}
+          /<!-- SKILLS_PROGRESS -->/ {print; block(skills); next}
+          /<!-- PROTO_PROGRESS -->/ {print; block(proto); next}
+          /<!-- GRAPHQL_PROGRESS -->/ {print; block(graphql); next}
+          /<!-- RACE_PROGRESS -->/ {print; block(race); next}
+          /<!-- NOSQL_PROGRESS -->/ {print; block(nosql); next}
+          /<!-- API_PROGRESS -->/ {print; block(api); next}
+          /<!-- LLM_PROGRESS -->/ {print; block(llm); next}
+          /<!-- CACHEDEC_PROGRESS -->/ {print; block(cachedec); next}
 
           !skip
           ' README.md > temp.md
