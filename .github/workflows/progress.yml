@@ -54,6 +54,7 @@ jobs:
           /^## 📊 Progress/ {
             print
             getline
+            getline
             print bar
             print done "/" total " (" percent "%)"
             next
