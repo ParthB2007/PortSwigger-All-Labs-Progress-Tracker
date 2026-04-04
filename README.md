@@ -137,13 +137,12 @@ GitHub Actions will automatically update:
    
 
 ## Cross-origin resource sharing (CORS)
-
    
 - [ ] CORS vulnerability with trusted null origin — *APPRENTICE*
 - [ ] CORS vulnerability with trusted insecure protocols — *PRACTITIONER*
-   
-  ## XML external entity (XXE) injection
 
+   
+## XML external entity (XXE) injection
    
 - [ ] Exploiting XXE to perform SSRF attacks — *APPRENTICE*
 - [ ] Blind XXE with out-of-band interaction — *PRACTITIONER*
@@ -153,9 +152,9 @@ GitHub Actions will automatically update:
 - [ ] Exploiting XInclude to retrieve files — *PRACTITIONER*
 - [ ] Exploiting XXE via image file upload — *PRACTITIONER*
 - [ ] Exploiting XXE to retrieve data by repurposing a local DTD — *EXPERT*
-   
-  ## Server-side request forgery (SSRF)
 
+   
+ ## Server-side request forgery (SSRF)
    
 - [x] Basic SSRF against another back-end system — *APPRENTICE*
 - [ ] Blind SSRF with out-of-band detection — *PRACTITIONER*
@@ -166,7 +165,6 @@ GitHub Actions will automatically update:
    
 
 ## HTTP request smuggling
-
    
 - [ ] HTTP request smuggling, confirming a TE.CL vulnerability via differential responses — *PRACTITIONER*
 - [ ] Exploiting HTTP request smuggling to bypass front-end security controls, CL.TE vulnerability — *PRACTITIONER*
@@ -189,17 +187,17 @@ GitHub Actions will automatically update:
 - [ ] Web cache poisoning via HTTP/2 request tunnelling — *EXPERT*
 - [ ] Client-side desync — *EXPERT*
 - [ ] Server-side pause-based request smuggling — *EXPERT*
-   
-  ## OS command injection
 
+   
+## OS command injection
    
 - [x] Blind OS command injection with time delays — *PRACTITIONER*
 - [x] Blind OS command injection with output redirection — *PRACTITIONER*
 - [x] Blind OS command injection with out-of-band interaction — *PRACTITIONER*
 - [x] Blind OS command injection with out-of-band data exfiltration — *PRACTITIONER*
-   
-  ## Server-side template injection
 
+   
+## Server-side template injection
    
 - [ ] Basic server-side template injection (code context) — *PRACTITIONER*
 - [ ] Server-side template injection using documentation — *PRACTITIONER*
@@ -210,8 +208,6 @@ GitHub Actions will automatically update:
    
 
 ## Path traversal
-
-   
    
 - [x] File path traversal, simple case — *APPRENTICE*
 - [ ] File path traversal, traversal sequences blocked with absolute path bypass — *PRACTITIONER*
@@ -219,9 +215,9 @@ GitHub Actions will automatically update:
 - [ ] File path traversal, traversal sequences stripped with superfluous URL-decode — *PRACTITIONER*
 - [ ] File path traversal, validation of start of path — *PRACTITIONER*
 - [ ] File path traversal, validation of file extension with null byte bypass — *PRACTITIONER*
-   
-  ## Access control vulnerabilities
 
+   
+## Access control vulnerabilities
    
 - [x] Unprotected admin functionality with unpredictable URL — *APPRENTICE*
 - [x] User role controlled by request parameter — *APPRENTICE*
@@ -238,7 +234,6 @@ GitHub Actions will automatically update:
    
 
 ## Authentication
-
    
 - [x] 2FA simple bypass — *APPRENTICE*
 - [x] Password reset broken logic — *APPRENTICE*
@@ -253,14 +248,15 @@ GitHub Actions will automatically update:
 - [ ] Password brute-force via password change — *PRACTITIONER*
 - [ ] Broken brute-force protection, multiple credentials per request — *EXPERT*
 - [ ] 2FA bypass using a brute-force attack — *EXPERT*
-   
-  ## WebSockets
-   
+
+
+## WebSockets
+
 - [ ] Cross-site WebSocket hijacking — *PRACTITIONER*
 - [ ] Manipulating the WebSocket handshake to exploit vulnerabilities — *PRACTITIONER*
-   
-  ## Web cache poisoning
 
+
+## Web cache poisoning
    
 - [ ] Web cache poisoning with an unkeyed cookie — *PRACTITIONER*
 - [ ] Web cache poisoning with multiple headers — *PRACTITIONER*
@@ -274,9 +270,9 @@ GitHub Actions will automatically update:
 - [ ] Combining web cache poisoning vulnerabilities — *EXPERT*
 - [ ] Cache key injection — *EXPERT*
 - [ ] Internal cache poisoning — *EXPERT*
-   
-  ## Insecure deserialization
 
+   
+## Insecure deserialization
    
 - [ ] Modifying serialized data types — *PRACTITIONER*
 - [ ] Using application functionality to exploit insecure deserialization — *PRACTITIONER*
@@ -287,17 +283,17 @@ GitHub Actions will automatically update:
 - [ ] Developing a custom gadget chain for Java deserialization — *EXPERT*
 - [ ] Developing a custom gadget chain for PHP deserialization — *EXPERT*
 - [ ] Using PHAR deserialization to deploy a custom gadget chain — *EXPERT*
-   
-  ## Information disclosure
 
+   
+## Information disclosure
    
 - [ ] Information disclosure on debug page — *APPRENTICE*
 - [ ] Source code disclosure via backup files — *APPRENTICE*
 - [ ] Authentication bypass via information disclosure — *APPRENTICE*
 - [ ] Information disclosure in version control history — *PRACTITIONER*
-   
-  ## Business logic vulnerabilities
 
+   
+## Business logic vulnerabilities
    
 - [ ] High-level logic vulnerability — *APPRENTICE*
 - [ ] Inconsistent security controls — *APPRENTICE*
@@ -310,9 +306,9 @@ GitHub Actions will automatically update:
 - [ ] Infinite money logic flaw — *PRACTITIONER*
 - [ ] Authentication bypass via encryption oracle — *PRACTITIONER*
 - [ ] Bypassing access controls using email address parsing discrepancies — *EXPERT*
-   
-  ## HTTP Host header attacks
 
+   
+## HTTP Host header attacks
    
 - [ ] Host header authentication bypass — *APPRENTICE*
 - [ ] Web cache poisoning via ambiguous requests — *PRACTITIONER*
@@ -320,18 +316,18 @@ GitHub Actions will automatically update:
 - [ ] SSRF via flawed request parsing — *PRACTITIONER*
 - [ ] Host validation bypass via connection state attack — *PRACTITIONER*
 - [ ] Password reset poisoning via dangling markup — *EXPERT*
-   
-  ## OAuth authentication
 
+   
+## OAuth authentication
    
 - [ ] SSRF via OpenID dynamic client registration — *PRACTITIONER*
 - [ ] Forced OAuth profile linking — *PRACTITIONER*
 - [ ] OAuth account hijacking via redirect_uri — *PRACTITIONER*
 - [ ] Stealing OAuth access tokens via an open redirect — *PRACTITIONER*
 - [ ] Stealing OAuth access tokens via a proxy page — *EXPERT*
-   
-  ## File upload vulnerabilities
 
+   
+## File upload vulnerabilities
    
 - [x] Web shell upload via Content-Type restriction bypass — *APPRENTICE*
 - [ ] Web shell upload via path traversal — *PRACTITIONER*
@@ -339,9 +335,9 @@ GitHub Actions will automatically update:
 - [ ] Web shell upload via obfuscated file extension — *PRACTITIONER*
 - [ ] Remote code execution via polyglot web shell upload — *PRACTITIONER*
 - [ ] Web shell upload via race condition — *EXPERT*
-   
-  ## JWT
 
+   
+## JWT
    
 - [ ] JWT authentication bypass via flawed signature verification — *APPRENTICE*
 - [ ] JWT authentication bypass via weak signing key — *PRACTITIONER*
@@ -350,14 +346,14 @@ GitHub Actions will automatically update:
 - [ ] JWT authentication bypass via kid header path traversal — *PRACTITIONER*
 - [ ] JWT authentication bypass via algorithm confusion — *EXPERT*
 - [ ] JWT authentication bypass via algorithm confusion with no exposed key — *EXPERT*
+
    
 ## Essential skills
-
    
 - [ ] Scanning non-standard data structures — *PRACTITIONER*
+
    
 ## Prototype pollution
-
    
 - [ ] DOM XSS via client-side prototype pollution — *PRACTITIONER*
 - [ ] DOM XSS via an alternative prototype pollution vector — *PRACTITIONER*
@@ -368,48 +364,48 @@ GitHub Actions will automatically update:
 - [ ] Bypassing flawed input filters for server-side prototype pollution — *PRACTITIONER*
 - [ ] Remote code execution via server-side prototype pollution — *PRACTITIONER*
 - [ ] Exfiltrating sensitive data via server-side prototype pollution — *EXPERT*
-   
-  ## GraphQL API vulnerabilities
 
    
+## GraphQL API vulnerabilities
+
 - [ ] Accidental exposure of private GraphQL fields — *PRACTITIONER*
 - [ ] Finding a hidden GraphQL endpoint — *PRACTITIONER*
 - [ ] Bypassing GraphQL brute force protections — *PRACTITIONER*
 - [ ] Performing CSRF exploits over GraphQL — *PRACTITIONER*
-   
-  ## Race conditions
 
+   
+## Race conditions
    
 - [ ] Bypassing rate limits via race conditions — *PRACTITIONER*
 - [ ] Multi-endpoint race conditions — *PRACTITIONER*
 - [ ] Single-endpoint race conditions — *PRACTITIONER*
 - [ ] Exploiting time-sensitive vulnerabilities — *PRACTITIONER*
 - [ ] Partial construction race conditions — *EXPERT*
-   
-  ## NoSQL injection
 
    
+## NoSQL injection
+
 - [ ] Exploiting NoSQL operator injection to bypass authentication — *APPRENTICE*
 - [ ] Exploiting NoSQL injection to extract data — *PRACTITIONER*
 - [ ] Exploiting NoSQL operator injection to extract unknown fields — *PRACTITIONER*
-   
-  ## API testing
 
+   
+## API testing
    
 - [ ] Exploiting server-side parameter pollution in a query string — *PRACTITIONER*
 - [x] Finding and exploiting an unused API endpoint — *PRACTITIONER*
 - [x] Exploiting a mass assignment vulnerability — *PRACTITIONER*
 - [ ] Exploiting server-side parameter pollution in a REST URL — *EXPERT*
-   
-  ## Web LLM attacks
 
+   
+## Web LLM attacks
    
 - [x] Exploiting vulnerabilities in LLM APIs — *PRACTITIONER*
 - [ ] Indirect prompt injection — *PRACTITIONER*
 - [ ] Exploiting insecure output handling in LLMs — *EXPERT*
-   
-  ## Web cache deception
 
+   
+## Web cache deception
    
 - [ ] Exploiting path delimiters for web cache deception — *PRACTITIONER*
 - [ ] Exploiting origin server normalization for web cache deception — *PRACTITIONER*
