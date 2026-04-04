@@ -5,6 +5,8 @@
 <!-- OVERALL_START -->
 ██░░░░░░░░░░░░░░░░░░
 36/272 (13%)
+██░░░░░░░░░░░░░░░░░░
+36/272 (13%)
 <!-- OVERALL_END -->
 ---
 <details>
@@ -75,6 +77,8 @@ GitHub Actions will automatically update:
 0/30 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/30 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/30 (0%)
 <!-- XSS_START -->
 - [ ] Reflected XSS into HTML context with nothing encoded — *APPRENTICE*
 - [ ] Stored XSS into HTML context with nothing encoded — *APPRENTICE*
@@ -116,6 +120,8 @@ GitHub Actions will automatically update:
 0/12 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/12 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/12 (0%)
 <!-- CSRF_START -->
 - [ ] CSRF vulnerability with no defenses — *APPRENTICE*
 - [ ] CSRF where token validation depends on request method — *PRACTITIONER*
@@ -140,6 +146,8 @@ GitHub Actions will automatically update:
 0/5 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/5 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/5 (0%)
 <!-- CLICKJACK_START -->
 - [ ] Basic clickjacking with CSRF token protection — *APPRENTICE*
 - [ ] Clickjacking with form input data prefilled from a URL parameter — *APPRENTICE*
@@ -151,6 +159,8 @@ GitHub Actions will automatically update:
 ## DOM-based vulnerabilities
 
 <!-- DOM_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/7 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/7 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -176,6 +186,8 @@ GitHub Actions will automatically update:
 0/3 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/3 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/3 (0%)
 <!-- CORS_START -->
 - [ ] CORS vulnerability with basic origin reflection — *APPRENTICE*
 - [ ] CORS vulnerability with trusted null origin — *APPRENTICE*
@@ -186,6 +198,8 @@ GitHub Actions will automatically update:
 ## XML external entity (XXE) injection
 
 <!-- XXE_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/9 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/9 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -214,6 +228,8 @@ GitHub Actions will automatically update:
 2/7 (28%)
 █████░░░░░░░░░░░░░░░
 2/7 (28%)
+█████░░░░░░░░░░░░░░░
+2/7 (28%)
 <!-- SSRF_START -->
 - [x] Basic SSRF against the local server — *APPRENTICE*
 - [x] Basic SSRF against another back-end system — *APPRENTICE*
@@ -227,6 +243,8 @@ GitHub Actions will automatically update:
 ## HTTP request smuggling
 
 <!-- SMUGGLING_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/22 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/22 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -268,6 +286,8 @@ GitHub Actions will automatically update:
 5/5 (100%)
 ████████████████████░
 5/5 (100%)
+████████████████████░
+5/5 (100%)
 <!-- CMD_START -->
 - [x] OS command injection, simple case — *APPRENTICE*
 - [x] Blind OS command injection with time delays — *PRACTITIONER*
@@ -280,6 +300,8 @@ GitHub Actions will automatically update:
 ## Server-side template injection
 
 <!-- SSTI_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/7 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/7 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -318,6 +340,8 @@ GitHub Actions will automatically update:
 5/13 (38%)
 ███████░░░░░░░░░░░░░
 5/13 (38%)
+███████░░░░░░░░░░░░░
+5/13 (38%)
 <!-- ACCESS_START -->
 - [x] Unprotected admin functionality — *APPRENTICE*
 - [x] Unprotected admin functionality with unpredictable URL — *APPRENTICE*
@@ -337,6 +361,8 @@ GitHub Actions will automatically update:
 ## Authentication
 
 <!-- AUTH_PROGRESS -->
+████████░░░░░░░░░░░░
+6/14 (42%)
 ████████░░░░░░░░░░░░
 6/14 (42%)
 ████████░░░░░░░░░░░░
@@ -369,6 +395,8 @@ GitHub Actions will automatically update:
 1/3 (33%)
 ██████░░░░░░░░░░░░░░
 1/3 (33%)
+██████░░░░░░░░░░░░░░
+1/3 (33%)
 <!-- WS_START -->
 - [x] Manipulating WebSocket messages to exploit vulnerabilities — *APPRENTICE*
 - [ ] Cross-site WebSocket hijacking — *PRACTITIONER*
@@ -379,6 +407,8 @@ GitHub Actions will automatically update:
 ## Web cache poisoning
 
 <!-- CACHE_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/13 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/13 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -411,6 +441,8 @@ GitHub Actions will automatically update:
 0/10 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/10 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/10 (0%)
 <!-- DESERIAL_START -->
 - [ ] Modifying serialized objects — *APPRENTICE*
 - [ ] Modifying serialized data types — *PRACTITIONER*
@@ -434,6 +466,8 @@ GitHub Actions will automatically update:
 0/5 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/5 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/5 (0%)
 <!-- INFO_START -->
 - [ ] Information disclosure in error messages — *APPRENTICE*
 - [ ] Information disclosure on debug page — *APPRENTICE*
@@ -446,6 +480,8 @@ GitHub Actions will automatically update:
 ## Business logic vulnerabilities
 
 <!-- LOGIC_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/12 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/12 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -477,6 +513,8 @@ GitHub Actions will automatically update:
 0/7 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/7 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/7 (0%)
 <!-- HOST_START -->
 - [ ] Basic password reset poisoning — *APPRENTICE*
 - [ ] Host header authentication bypass — *APPRENTICE*
@@ -491,6 +529,8 @@ GitHub Actions will automatically update:
 ## OAuth authentication
 
 <!-- OAUTH_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/6 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/6 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -516,6 +556,8 @@ GitHub Actions will automatically update:
 2/7 (28%)
 █████░░░░░░░░░░░░░░░
 2/7 (28%)
+█████░░░░░░░░░░░░░░░
+2/7 (28%)
 <!-- UPLOAD_START -->
 - [x] Remote code execution via web shell upload — *APPRENTICE*
 - [x] Web shell upload via Content-Type restriction bypass — *APPRENTICE*
@@ -530,6 +572,8 @@ GitHub Actions will automatically update:
 ## JWT
 
 <!-- JWT_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/8 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/8 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -557,6 +601,8 @@ GitHub Actions will automatically update:
 0/2 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/2 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/2 (0%)
 <!-- SKILLS_START -->
 - [ ] Discovering vulnerabilities quickly with targeted scanning — *PRACTITIONER*
 - [ ] Scanning non-standard data structures — *PRACTITIONER*
@@ -566,6 +612,8 @@ GitHub Actions will automatically update:
 ## Prototype pollution
 
 <!-- PROTO_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/10 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/10 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -595,6 +643,8 @@ GitHub Actions will automatically update:
 0/5 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/5 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/5 (0%)
 <!-- GRAPHQL_START -->
 - [ ] Accessing private GraphQL posts — *APPRENTICE*
 - [ ] Accidental exposure of private GraphQL fields — *PRACTITIONER*
@@ -607,6 +657,8 @@ GitHub Actions will automatically update:
 ## Race conditions
 
 <!-- RACE_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/6 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/6 (0%)
 █░░░░░░░░░░░░░░░░░░░░
@@ -632,6 +684,8 @@ GitHub Actions will automatically update:
 0/4 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/4 (0%)
+█░░░░░░░░░░░░░░░░░░░░
+0/4 (0%)
 <!-- NOSQL_START -->
 - [ ] Detecting NoSQL injection — *APPRENTICE*
 - [ ] Exploiting NoSQL operator injection to bypass authentication — *APPRENTICE*
@@ -643,6 +697,8 @@ GitHub Actions will automatically update:
 ## API testing
 
 <!-- API_PROGRESS -->
+████████████░░░░░░░░
+3/5 (60%)
 ████████████░░░░░░░░
 3/5 (60%)
 ████████████░░░░░░░░
@@ -667,6 +723,8 @@ GitHub Actions will automatically update:
 2/4 (50%)
 ██████████░░░░░░░░░░
 2/4 (50%)
+██████████░░░░░░░░░░
+2/4 (50%)
 <!-- LLM_START -->
 - [x] Exploiting LLM APIs with excessive agency — *APPRENTICE*
 - [x] Exploiting vulnerabilities in LLM APIs — *PRACTITIONER*
@@ -678,6 +736,8 @@ GitHub Actions will automatically update:
 ## Web cache deception
 
 <!-- CACHEDEC_PROGRESS -->
+█░░░░░░░░░░░░░░░░░░░░
+0/5 (0%)
 █░░░░░░░░░░░░░░░░░░░░
 0/5 (0%)
 █░░░░░░░░░░░░░░░░░░░░
