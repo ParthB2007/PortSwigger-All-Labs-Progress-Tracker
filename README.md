@@ -2,8 +2,8 @@
 <sub>Crafted by ParthB2007 (Remove this idc) </sub>
 
 ## 📊 Progress
-██░░░░░░░░░░░░░░░░░░
-36/244 (14%)
+███░░░░░░░░░░░░░░░░░
+41/244 (16%)
   <details>
 <summary><h2>How to Use</h2></summary>
 
