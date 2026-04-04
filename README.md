@@ -3,7 +3,7 @@
 
 ## 📊 Progress
 ██░░░░░░░░░░░░░░░░░░
-27/246 (10%)
+28/246 (11%)
   <details>
 <summary><h2>How to Use</h2></summary>
 
