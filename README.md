@@ -111,7 +111,7 @@ GitHub Actions will automatically update:
 - [ ] CORS vulnerability with trusted insecure protocols
 
 ## XML external entity (XXE) injection
-- [ ] Exploiting XXE using external entities to retrieve files
+- [x] Exploiting XXE using external entities to retrieve files
 - [ ] Exploiting XXE to perform SSRF attacks
 - [ ] Blind XXE with out-of-band interaction
 - [ ] Blind XXE with out-of-band interaction via XML parameter entities
