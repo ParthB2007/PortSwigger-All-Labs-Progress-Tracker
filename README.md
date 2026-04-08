@@ -113,7 +113,7 @@ GitHub Actions will automatically update:
 ## XML external entity (XXE) injection
 - [x] Exploiting XXE using external entities to retrieve files
 - [x] Exploiting XXE to perform SSRF attacks
-- [ ] Blind XXE with out-of-band interaction
+- [x] Blind XXE with out-of-band interaction
 - [ ] Blind XXE with out-of-band interaction via XML parameter entities
 - [ ] Exploiting blind XXE to exfiltrate data using a malicious external DTD
 - [ ] Exploiting blind XXE to retrieve data via error messages
